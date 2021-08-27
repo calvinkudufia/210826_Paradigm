@@ -67,6 +67,11 @@ body {
   padding-left: 5vw;
   padding-right: 5vw;
   padding-top: 4.5vw;
+  text-indent: 10vw;
+}
+
+.equation{
+  padding-left: 15vw;
 }
 
 img {
@@ -75,6 +80,7 @@ img {
   padding-top: 0;
   width: 100%;
   height: auto;
+ 
 }
 
 .s1 {
@@ -87,8 +93,26 @@ img {
   background-position: 50% 50%;
 }
 
-.p3 {
 
+.p3_title {
+  background: url("images/paradigm/titel_paradigm.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 100r%;
+}
+
+.paradigm_text{
+  text-align: center;
+  font-size: 2.5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  text-transform:uppercase;
+}
+
+.p3_middle {
+  background: url("images/paradigm/middle_age.png");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .p4 {
