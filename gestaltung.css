@@ -13,6 +13,10 @@ body {
   box-sizing: border-box;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  background: url("images/paradigm/dark.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+
 }
 
 ::-webkit-scrollbar {
@@ -28,13 +32,23 @@ body {
   left: 0;
   font-family: "everett";
   font-size: 4vw;
-  z-index: 10;
+  z-index: 99;
 }
 
 .header {
+  width: 50%;
   color: rgb(200, 200, 200);
   padding-top: 4.5vw;
   padding-left: 5vw;
+}
+
+.chapter_titel {
+  text-align: right;
+  color: rgb(200, 200, 200);
+  padding-top: 4.5vw;
+  padding-right: 5vw;
+  z-index: 99;
+  width: 50%;
 }
 
 .section {
@@ -45,15 +59,6 @@ body {
 
 .slide {
   text-align: center;
-  vertical-align: top;
-}
-
-.images {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  min-height: 100;
 }
 
 .text {
@@ -67,23 +72,176 @@ body {
 img {
   top: 0;
   left: 0;
+  padding-top: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 
 .s1 {
   background-color: black;
 }
 
-.p3 {
-  background: url("images/paradigm/dark.jpg");
+.s2 {
+  background: url("images/Stalin/stalin.jpg");
   background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p3 {
+
 }
 
 .p4 {
   background: url("images/open_source/Macaca_nigra_self-portrait_large.jpeg");
   background-size: cover;
+  background-position: 50% 50%;
 }
+
+.p8 {
+  background: url("images/avantgarde/titel_paradigm.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_1 {
+  background: url("images/avantgarde/titel_paradigm3.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_2 {
+  background: url("images/avantgarde/titel_paradigm4.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_3 {
+  background: url("images/avantgarde/titel_paradigm5.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_4 {
+  background: url("images/avantgarde/titel_paradigm6.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_5 {
+  background: url("images/avantgarde/titel_paradigm7.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_6 {
+  background: url("images/avantgarde/titel_paradigm8.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_7 {
+  background: url("images/avantgarde/titel_paradigm9.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_8 {
+  background: url("images/avantgarde/titel_paradigm10.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_9 {
+  background: url("images/avantgarde/titel_paradigm11.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_10 {
+  background: url("images/avantgarde/titel_paradigm12.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_11 {
+  background: url("images/avantgarde/titel_paradigm13.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_12 {
+  background: url("images/avantgarde/titel_paradigm14.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_13 {
+  background: url("images/avantgarde/titel_paradigm15.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_14 {
+  background: url("images/avantgarde/titel_paradigm16.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_15 {
+  background: url("images/avantgarde/titel_paradigm17.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_16 {
+  background: url("images/avantgarde/titel_paradigm18.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_17 {
+  background: url("images/avantgarde/titel_paradigm19.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_18 {
+  background: url("images/avantgarde/titel_paradigm20.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_19 {
+  background: url("images/avantgarde/titel_paradigm21.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_20 {
+  background: url("images/avantgarde/titel_paradigm22.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_21 {
+  background: url("images/avantgarde/titel_paradigm23.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_22 {
+  background: url("images/avantgarde/titel_paradigm24.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p8_23 {
+  background: url("images/avantgarde/titel_paradigm3.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
 
 .loading_text {
   color: rgb(200, 200, 200);
@@ -97,4 +255,41 @@ img {
   text-align: left;
   padding-left: 5vw;
   padding-top: 10vw;
+}
+
+.newsletter_text {
+  color: rgb(200, 200, 200);
+  font-family: "everett";
+  bottom: 0;
+  left: 0;
+  font-size: 4vw;
+  position: fixed;
+  text-align: left;
+  padding-left: 5vw;
+  padding-bottom: 4.5vw;
+}
+
+.date_text {
+  color: rgb(200, 200, 200);
+  font-family: "everett";
+  bottom: 0;
+  right: 0;
+  font-size: 4vw;
+  position: fixed;
+  text-align: right;
+  padding-right: 5vw;
+  padding-bottom: 4.5vw;
+}
+
+.skip {
+    color: rgb(200, 200, 200);
+    font-family: "everett";
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 4vw;
+    position: fixed;
+    text-align: center;
+    padding-bottom: 4.5vw;
+  }
 }
