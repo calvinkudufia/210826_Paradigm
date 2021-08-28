@@ -277,13 +277,13 @@ img {
 }
 
 .newsletter_text {
+  position: absolute;
   width: 100%;
   color: rgb(200, 200, 200);
   font-family: "everett";
   bottom: 0;
   left: 0;
   font-size: 4vw;
-  display: block;
   text-align: left;
   padding-left: 5vw;
   padding-bottom: 20vw;
