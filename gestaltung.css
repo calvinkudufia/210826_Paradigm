@@ -290,17 +290,17 @@ img {
 }
 
 .date_text {
-  width: 100%;
   position: absolute;
+  width: 100%;
   color: rgb(200, 200, 200);
   font-family: "everett";
   bottom: 0;
   right: 0;
+  left: auto;
   font-size: 4vw;
-  line-height: 12vw;
   text-align: left;
-  padding-right: 5vw;
-  padding-top: 10vw;
+  padding-left: 5vw;
+  padding-bottom: 4.5vw;
 }
 
 .skip {
