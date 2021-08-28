@@ -3,6 +3,11 @@
   font-family: "everett";
 }
 
+@font-face {
+  src: url("fonts/berthold.ttf");
+  font-family: "berthold";
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -39,6 +44,15 @@ body {
   color: rgb(200, 200, 200);
   padding-top: 4.5vw;
   padding-left: 5vw;
+}
+
+.header_desktop {
+  display: none;
+  font-size: 20px;
+  padding-top: 40px;
+  padding-left: 45px;
+  width: 50%;
+  color: rgb(200, 200, 200);
 }
 
 .chapter_titel {
@@ -343,4 +357,60 @@ img {
   text-align: center;
   padding-bottom: 4.5vw;
   opacity: 50%;
+}
+
+@media screen and (min-width: 500px) {
+  .nav_text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 812px) {
+  .s2,
+  .s3,
+  .s4,
+  .s5,
+  .s6,
+  .s7,
+  .s8,
+  .s9,
+  .s10,
+  .s11,
+  .s12 {
+    display: none;
+  }
+  .loading_text {
+    color: red;
+  }
+  .loading_one {
+    width: 33.33%;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .header {
+    padding-top: 40px;
+    padding-left: 45px;
+    display: none;
+  }
+
+  .header_desktop {
+    padding-top: 40px;
+    padding-left: 45px;
+    display: inline-block;
+  }
+
+  .loading_text {
+    display: none;
+  }
+
+  .date_text {
+    padding-bottom: 40px;
+    padding-right: 45px;
+  }
+  .newsletter_text {
+    padding-bottom: 40px;
+    padding-left: 45px;
+  }
 }

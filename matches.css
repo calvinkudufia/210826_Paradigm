@@ -61,6 +61,7 @@
 }
 
 .container {
+  position: absolute;
   width: 100vw;
   height: 100%;
   overflow: hidden;
@@ -160,4 +161,12 @@
     rotateY(180deg);
   transform: translate3d(-200px, -250px, 6px) translate3d(0, 0, -12px)
     rotateY(180deg);
+}
+
+@media screen and (min-width: 812px) {
+  .loading_one {
+    width: 33.33%;
+    float: left;
+    overflow: visible;
+  }
 }
