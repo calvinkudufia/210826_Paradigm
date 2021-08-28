@@ -296,8 +296,8 @@ img {
   background-color: black;
   font-family: "everett";
   bottom: 0;
-  right: 0;
-  font-size: 4vw;
+  left: 0;
+  font-size: 5vw;
   line-height: 12vw;
   position: fixed;
   text-align: left;
@@ -307,7 +307,7 @@ img {
 
 .skip {
   width: 100%;
-  position: relative;
+  position: absolute;
   color: rgb(200, 200, 200);
   font-family: "everett";
   bottom: 0;
