@@ -296,9 +296,8 @@ img {
   font-family: "everett";
   bottom: 0;
   right: 0;
-  left: auto;
   font-size: 4vw;
-  text-align: left;
+  text-align: right;
   padding-left: 5vw;
   padding-bottom: 4.5vw;
 }
