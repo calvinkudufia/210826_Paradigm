@@ -295,8 +295,8 @@ img {
   color: rgb(200, 200, 200);
   background-color: black;
   font-family: "everett";
-  top: 0;
-  left: 0;
+  bottom: 0;
+  right: 0;
   font-size: 5vw;
   line-height: 12vw;
   position: fixed;
