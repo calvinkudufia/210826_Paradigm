@@ -16,7 +16,6 @@ body {
   background: url("images/paradigm/dark.jpg");
   background-size: cover;
   background-position: 50% 50%;
-
 }
 
 ::-webkit-scrollbar {
@@ -70,7 +69,7 @@ body {
   text-indent: 10vw;
 }
 
-.equation{
+.equation {
   padding-left: 15vw;
 }
 
@@ -92,20 +91,19 @@ img {
   background-position: 50% 50%;
 }
 
-
 .p3_title {
   background: url("images/paradigm/titel_paradigm.png");
   background-size: cover;
   background-position: 50% 50%;
-  opacity: 100r%;
+  opacity: 100%;
 }
 
-.paradigm_text{
+.paradigm_text {
   text-align: center;
   font-size: 2.5vw;
   padding-left: 5vw;
   padding-right: 5vw;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
 .p3_middle {
@@ -264,8 +262,6 @@ img {
   background-position: 50% 50%;
 }
 
-
-
 .loading_text {
   color: rgb(200, 200, 200);
   background-color: black;
@@ -305,14 +301,13 @@ img {
 }
 
 .skip {
-    color: rgb(200, 200, 200);
-    font-family: "everett";
-    bottom: 0;
-    right: 0;
-    left: 0;
-    font-size: 4vw;
-    position: fixed;
-    text-align: center;
-    padding-bottom: 4.5vw;
-  }
+  color: rgb(200, 200, 200);
+  font-family: "everett";
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-size: 4vw;
+  position: fixed;
+  text-align: center;
+  padding-bottom: 4.5vw;
 }
