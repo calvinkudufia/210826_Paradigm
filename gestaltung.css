@@ -284,7 +284,7 @@ img {
   bottom: 0;
   left: 0;
   font-size: 4vw;
-  position: fixed;
+  display: block;
   text-align: left;
   padding-left: 5vw;
   padding-bottom: 20vw;
@@ -299,7 +299,6 @@ img {
   left: 0;
   font-size: 5vw;
   line-height: 12vw;
-  position: fixed;
   text-align: left;
   padding-left: 5vw;
   padding-top: 10vw;
