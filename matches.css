@@ -62,7 +62,7 @@
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   -webkit-perspective: 1200px;
   perspective: 1200px;
