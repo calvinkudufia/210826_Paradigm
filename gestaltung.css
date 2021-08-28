@@ -291,6 +291,8 @@ img {
 }
 
 .date_text {
+  height: auto;
+  width: auto;
   color: rgb(200, 200, 200);
   font-family: "everett";
   bottom: 0;
