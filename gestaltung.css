@@ -277,6 +277,7 @@ img {
 }
 
 .newsletter_text {
+  position: relative;
   height: 100%;
   color: rgb(200, 200, 200);
   font-family: "everett";
@@ -298,20 +299,20 @@ img {
   bottom: 0;
   right: 0;
   font-size: 4vw;
-  position: fixed;
   text-align: right;
   padding-right: 5vw;
   padding-bottom: 4.5vw;
 }
 
 .skip {
+  width: 100%;
+  position: relative;
   color: rgb(200, 200, 200);
   font-family: "everett";
   bottom: 0;
   right: 0;
   left: 0;
   font-size: 4vw;
-  position: fixed;
   text-align: center;
   padding-bottom: 4.5vw;
 }
