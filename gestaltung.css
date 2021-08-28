@@ -98,7 +98,7 @@ img {
   opacity: 100%;
 }
 
-.paradigm_text {
+.paradigm_title_text {
   text-align: center;
   font-size: 2.5vw;
   padding-left: 5vw;
@@ -112,8 +112,33 @@ img {
   background-position: 50% 50%;
 }
 
+.p3_1 {
+  background: url("images/paradigm/light.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  opacity: 100%;
+}
+
 .p4 {
   background: url("images/open_source/Macaca_nigra_self-portrait_large.jpeg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p5_images {
+  color: rgb(200, 200, 200);
+  font-family: "everett";
+  top: 0;
+  left: 0;
+  font-size: 12vw;
+  line-height: 12vw;
+  position: absolute;
+  text-align: left;
+  padding-top: 10vw;
+}
+
+.p7 {
+  background: url("images/Referenz/dump.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -314,4 +339,5 @@ img {
   font-size: 4vw;
   text-align: center;
   padding-bottom: 4.5vw;
+  opacity: 50%;
 }
