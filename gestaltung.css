@@ -299,6 +299,7 @@ img {
   right: 0;
   font-size: 5vw;
   line-height: 12vw;
+  position: fixed;
   text-align: left;
   padding-left: 5vw;
   padding-top: 10vw;
