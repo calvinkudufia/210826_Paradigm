@@ -277,8 +277,7 @@ img {
 }
 
 .newsletter_text {
-  position: relative;
-  height: 100%;
+  width: 100%;
   color: rgb(200, 200, 200);
   font-family: "everett";
   bottom: 0;
@@ -288,10 +287,11 @@ img {
   text-align: left;
   padding-left: 5vw;
   padding-bottom: 20vw;
-  z-index: 30;
 }
 
 .date_text {
+  width: 100%;
+  position: absolute;
   color: rgb(200, 200, 200);
   background-color: black;
   font-family: "everett";
