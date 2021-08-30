@@ -74,6 +74,51 @@ body {
   text-align: center;
 }
 
+.loading_text {
+  color: rgb(200, 200, 200);
+  background-color: black;
+  font-family: "everett";
+  top: 0;
+  left: 0;
+  font-size: 12vw;
+  line-height: 12vw;
+  position: fixed;
+  text-align: left;
+  padding-left: 5vw;
+  padding-top: 10vw;
+}
+
+.magazine_container {
+  position: relative;
+  text-align: center;
+  height: auto;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.magazine_title {
+  position: relative;
+  font-family: "berthold";
+  font-size: 1.5vw;
+  text-align: center;
+  padding-left: 45px;
+  padding-right: 45px;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.square {
+  width: 60%;
+  height: calc(60vw / 3 * 1.4);
+  border: 1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .text {
   top: 0;
   text-align: left;
@@ -304,20 +349,6 @@ img {
   background-position: 50% 50%;
 }
 
-.loading_text {
-  color: rgb(200, 200, 200);
-  background-color: black;
-  font-family: "everett";
-  top: 0;
-  left: 0;
-  font-size: 12vw;
-  line-height: 12vw;
-  position: fixed;
-  text-align: left;
-  padding-left: 5vw;
-  padding-top: 10vw;
-}
-
 .newsletter_text {
   position: absolute;
   width: 100%;
@@ -379,12 +410,14 @@ img {
   .s12 {
     display: none;
   }
-  .loading_text {
-    color: red;
+  * {
+    color: rgb(100, 100, 100);
   }
-  .loading_one {
-    width: 33.33%;
-    float: left;
+  .loading_text {
+    display: none;
+  }
+  .date_text {
+    display: none;
   }
 }
 
@@ -393,24 +426,19 @@ img {
     padding-top: 40px;
     padding-left: 45px;
     display: none;
+    color: rgb(100, 100, 100);
   }
 
   .header_desktop {
     padding-top: 40px;
     padding-left: 45px;
     display: inline-block;
+    color: rgb(100, 100, 100);
   }
 
-  .loading_text {
-    display: none;
-  }
-
-  .date_text {
-    padding-bottom: 40px;
-    padding-right: 45px;
-  }
   .newsletter_text {
     padding-bottom: 40px;
     padding-left: 45px;
+    color: rgb(100, 100, 100);
   }
 }

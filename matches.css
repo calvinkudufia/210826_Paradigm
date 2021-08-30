@@ -163,10 +163,41 @@
     rotateY(180deg);
 }
 
+.loading_two {
+  color: white;
+  width: 33.33%;
+  display: none;
+  font-size: 20px;
+}
+
+.loading_three {
+  color: white;
+  width: 33.33%;
+  display: none;
+  font-size: 20px;
+}
+
+#timer_two {
+  padding-top: 40px;
+}
+
+#timer_three {
+  padding-top: 40px;
+}
+
 @media screen and (min-width: 812px) {
   .loading_one {
     width: 33.33%;
     float: left;
     overflow: visible;
+  }
+  .loading_two {
+    display: block;
+    margin-left: 33.33%;
+  }
+
+  .loading_three {
+    display: block;
+    margin-left: 66.66%;
   }
 }

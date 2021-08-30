@@ -35,7 +35,7 @@
                 
                 <div class="container ">
                     <div class="loading_text">GUIDE TO A<br>NEW CREATIVE<br>PARADIGM</div>
-                    <div class="newsletter_text nav_text">Subscripe to newsletter</div>
+                    <div class="newsletter_text nav_text">Subscribe to newsletter</div>
                     <div class="date_text nav_text"t>09|21 New York</div>
                 </div>
                 <div class="container loading_one">
@@ -48,6 +48,28 @@
                             <div class="book-bottom"></div>
                             <div class="book-back"></div>
                         </div>
+                    </div>
+                </div>
+                <div class="container loading_two">
+                    <div class="magazine_container">
+                        <div id="timer_two"></div>
+                        <div class="square">
+                            <div class="magazine_title">
+                                II<br>MAN VS<br>MACHINE
+                            </div>
+                        </div>
+                        <div class="location"> <br> <br> X</div>
+                    </div>
+                </div>
+                <div class="container loading_three">
+                    <div class="magazine_container">
+                        <div id="timer_three"></div>
+                        <div class="square">
+                            <div class="magazine_title">
+                                III <br>RECOGNITION<br>VS EXPRESSION
+                            </div>
+                        </div>
+                        <div class="location"> <br><br>  X</div>
                     </div>
                 </div>
             </div>
@@ -352,5 +374,67 @@
         lazyLoading: true,
 
     });</script>
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Dec 15, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("timer_two").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s "+ "<br /><br /><br />";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer_two").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+<script>
+// Set the date we're counting down to
+var countDownDate2 = new Date("Mar 15, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate2 - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("timer_three").innerHTML = days + "d " + hours + "h "
+  + minutes + "m" + seconds + "s" + "<br /><br /><br />";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer_three").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
     
 </html>
