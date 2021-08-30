@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  src: url("fonts/digi.TTF");
+  font-family: "digi";
+}
+
+@font-face {
   src: url("fonts/berthold.ttf");
   font-family: "berthold";
 }
@@ -76,7 +81,6 @@ body {
 
 .loading_text {
   color: rgb(200, 200, 200);
-  background-color: black;
   font-family: "everett";
   top: 0;
   left: 0;
@@ -95,6 +99,14 @@ body {
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+#timer_two {
+  font-family: "digi";
+}
+
+#timer_three {
+  font-family: "digi";
 }
 
 .magazine_title {
@@ -360,6 +372,16 @@ img {
   text-align: left;
   padding-left: 5vw;
   padding-bottom: 4.5vw;
+  z-index: 33;
+}
+
+a.newsletter_text {
+  text-decoration: none;
+}
+
+a.newsletter_text:hover {
+  color: white;
+  transition-duration: 1s;
 }
 
 .date_text {

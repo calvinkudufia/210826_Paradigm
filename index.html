@@ -33,13 +33,11 @@
         <div id="fullpage">
             <div class="section s1">
                 
-                <div class="container ">
-                    <div class="loading_text">GUIDE TO A<br>NEW CREATIVE<br>PARADIGM</div>
-                    <div class="newsletter_text nav_text">Subscribe to newsletter</div>
-                    <div class="date_text nav_text"t>09|21 New York</div>
-                </div>
                 <div class="container loading_one">
-                    <div class="boockup">
+                    <div class="loading_text">GUIDE TO A<br>NEW CREATIVE<br>PARADIGM</div>
+                    <a class="newsletter_text nav_text" href="http://eepurl.com/hGhtGH" target="blank" >Subscribe to newsletter</a>
+                    <div class="date_text nav_text"t>09|21 New York</div>
+                    <a class="boockup" href="pages/download.html">
                         <div class="book-container">
                             <div class="book-front"></div>
                             <div class="book-side-left"></div>
@@ -48,8 +46,9 @@
                             <div class="book-bottom"></div>
                             <div class="book-back"></div>
                         </div>
-                    </div>
+                    </a>
                 </div>
+
                 <div class="container loading_two">
                     <div class="magazine_container">
                         <div id="timer_two"></div>
@@ -427,7 +426,7 @@ var x = setInterval(function() {
     
   // Output the result in an element with id="demo"
   document.getElementById("timer_three").innerHTML = days + "d " + hours + "h "
-  + minutes + "m" + seconds + "s" + "<br /><br /><br />";
+  + minutes + "m " + seconds + "s " + "<br /><br /><br />";
     
   // If the count down is over, write some text 
   if (distance < 0) {
