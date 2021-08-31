@@ -35,7 +35,7 @@ body {
 .header_container {
   position: fixed;
   display: flex;
-  width: 100vw;
+  width: 50vw;
   height: auto;
   top: 0vw;
   left: 0;
@@ -58,15 +58,6 @@ body {
   padding-left: 45px;
   width: 50%;
   color: rgb(200, 200, 200);
-}
-
-.chapter_titel {
-  text-align: right;
-  color: rgb(200, 200, 200);
-  padding-top: 4.5vw;
-  padding-right: 5vw;
-  z-index: 99;
-  width: 50%;
 }
 
 .section {
@@ -145,7 +136,6 @@ body {
 }
 
 img {
-  top: 0;
   left: 0;
   padding-top: 0;
   width: 100%;
@@ -180,8 +170,8 @@ img {
   text-transform: uppercase;
 }
 
-.p3_middle {
-  background: url("images/paradigm/middle_age.png");
+.p3_toyota {
+  background: url("images/paradigm/toyota.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -193,13 +183,31 @@ img {
   opacity: 100%;
 }
 
+.p3_adapt {
+  background: url("images/paradigm/adapt.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p3_ideas {
+  background: url("images/paradigm/ideas.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p3_adam {
+  background: url("images/paradigm/adam.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .p4 {
   background: url("images/open_source/Macaca_nigra_self-portrait_large.jpeg");
   background-size: cover;
   background-position: 50% 50%;
 }
 
-.p5_images {
+.p5_image {
   color: rgb(200, 200, 200);
   font-family: "everett";
   top: 0;
@@ -211,10 +219,23 @@ img {
   padding-top: 10vw;
 }
 
-.p7 {
-  background: url("images/Referenz/dump.jpg");
+.p6_trend {
+  background: url("images/high_and_low/trend.png");
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.p7_image {
+  color: rgb(200, 200, 200);
+  font-family: "everett";
+  top: 0;
+  left: 0;
+  font-size: 12vw;
+  line-height: 12vw;
+  position: absolute;
+  text-align: left;
+  height: 100%;
+  width: auto;
 }
 
 .p8 {
@@ -361,6 +382,24 @@ img {
   background-position: 50% 50%;
 }
 
+.p9_dance {
+  background: url("images/kitsch/Kitsch.gif");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p9_1 {
+  background: url("images/kitsch/kitsch.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p10 {
+  background: url("images/love_letter/love.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .newsletter_text {
   position: absolute;
   width: 100%;
@@ -399,7 +438,7 @@ a.newsletter_text:hover {
 }
 
 .skip {
-  width: 100%;
+  width: 100vw;
   position: absolute;
   color: rgb(200, 200, 200);
   font-family: "everett";
@@ -410,6 +449,59 @@ a.newsletter_text:hover {
   text-align: center;
   padding-bottom: 4.5vw;
   opacity: 50%;
+}
+
+.chapter_title {
+  width: 100vw;
+  position: absolute;
+  color: rgb(200, 200, 200);
+  font-family: "everett";
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 4vw;
+  text-align: right;
+  padding-top: 4.5vw;
+  padding-right: 5vw;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: left;
+  font-size: 12vw;
+  text-decoration: underline blue;
+  padding-left: 0vw;
+}
+
+.further_reading {
+  background-color: white;
+  top: 0;
+  color: blue;
+  font-size: 4vw;
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 4.5vw;
+  height: 100%;
+  width: 90vw;
+}
+
+.credits {
+  background-color: black;
+  top: 0;
+  color: white;
+  font-size: 2.75vw;
+  text-align: left;
+  padding-left: 5vw;
+  padding-top: 4.5vw;
+  height: 100%;
+  width: 45vw;
+  float: left;
+}
+
+.credits_two {
+  padding-left: 0;
+  padding-right: 5vw;
 }
 
 @media screen and (min-width: 500px) {

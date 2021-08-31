@@ -85,6 +85,7 @@
 .boockup {
   -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(-8deg);
   transform: rotateX(0deg) rotateY(0deg) rotateZ(-8deg);
+  pointer-events: none;
 }
 .book-container {
   -webkit-transform-style: preserve-3d;
@@ -199,5 +200,9 @@
   .loading_three {
     display: block;
     margin-left: 66.66%;
+  }
+
+  .boockup {
+    pointer-events: all;
   }
 }

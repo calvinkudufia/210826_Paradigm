@@ -56,6 +56,11 @@ a.header_desktop {
   text-decoration: none;
 }
 
+a.header_desktop:hover {
+  color: white;
+  transition-duration: 1s;
+}
+
 .container_one {
   position: relative;
   width: 50vw;
@@ -109,7 +114,7 @@ a.header_desktop {
   padding-bottom: 0;
   color: rgb(100, 100, 100);
   font-family: "everett";
-  font-size: 20px;
+  font-size: 15px;
 }
 a.newsletter_text {
   text-decoration: none;
