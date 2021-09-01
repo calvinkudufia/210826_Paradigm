@@ -311,48 +311,80 @@
             </div>
 
             <div class="section s8">
-
-                <div class="slide p8">
-                    <div class="container">
-                        <div class=skip>Skip Chapter</div>
+                    <div class="slide p8_title">
+                        <div class="container">
+                            <div class=skip>Skip Chapter</div>
+                        </div> 
                     </div>
-                </div>
-                <div class="slide p8_1"></div>
-                <div class="slide p8_2"></div> 
-                <div class="slide p8_3"></div> 
-                <div class="slide p8_4"></div> 
-                <div class="slide p8_5"></div> 
-                <div class="slide p8_6"></div> 
-                <div class="slide p8_7"></div> 
-                <div class="slide p8_8"></div> 
-                <div class="slide p8_9"></div> 
-                <div class="slide p8_10"></div> 
-                <div class="slide p8_11"></div> 
-                <div class="slide p8_12"></div> 
-                <div class="slide p8_13"></div> 
-                <div class="slide p8_14"></div> 
-                <div class="slide p8_15"></div> 
-                <div class="slide p8_16"></div> 
-                <div class="slide p8_17"></div> 
-                <div class="slide p8_18"></div> 
-                <div class="slide p8_19"></div> 
-                <div class="slide p8_20"></div> 
-                <div class="slide p8_21"></div> 
-                <div class="slide p8_22"></div> 
-                <div class="slide p8_23"></div> 
+                    <div class="slide p8">
+                        <div class="scrolling-wrapper">    
+                            <!-- START SERIES-->
+                            <div><img class="card" src="images/avantgarde/avantgarde2.jpg" alt="Avantgarde"></div>
+                            <div><img class="card" src="images/avantgarde/avantgarde3.jpg" alt="Avantgarde"></div>
+                            <div><img class="card" src="images/avantgarde/avantgarde4.jpg" alt="Avantgarde"></div>
+                            <div><img class="card" src="images/avantgarde/avantgarde5.jpg" alt="Avantgarde"></div>
+                            <div><img class="card" src="images/avantgarde/avantgarde6.jpg" alt="Avantgarde"></div>
+                            <div><img class="card" src="images/avantgarde/avantgarde7.jpg" alt="Avantgarde"></div>
+                            <div><img class="card" src="images/avantgarde/avantgarde8.jpg" alt="Avantgarde"></div>
+                            <div><img class="card" src="images/avantgarde/avantgarde9.jpg" alt="Avantgarde"></div>
+                            <div><img class="card" src="images/avantgarde/avantgarde10.jpg" alt="Avantgarde"></div>
+                            <div><img class="card" src="images/avantgarde/avantgarde11.jpg" alt="Avantgarde"></div>
+                        </div>
+                        <script>
+                            const slider = document.querySelector(".scrolling-wrapper");
+                            let mouseDown = false;
+                            let startX, scrollLeft;
+                        
+                            let startDragging = function (e) {
+                                mouseDown = true;
+                                startX = e.pageX - slider.offsetLeft;
+                                scrollLeft = slider.scrollLeft;
+                                console.log("Drag works");
+                            };
+                            let stopDragging = function (event) {
+                                mouseDown = false;
+                            };
+                        
+                            slider.addEventListener('mousemove', (e) => {
+                                e.preventDefault();
+                                if (!mouseDown) {
+                                    return;
+                                }
+                                const x = e.pageX - slider.offsetLeft;
+                                const scroll = x - startX;
+                                slider.scrollLeft = scrollLeft - scroll;
+                            });
+                        
+                            // Add the event listeners
+                            slider.addEventListener('mousedown', startDragging, false);
+                            slider.addEventListener('mouseup', stopDragging, false);
+                            slider.addEventListener('mouseleave', stopDragging, false);
+                        </script>
+                    </div>
             </div>
+
             <div class="section s9">
                 <div class="slide p9_dance">
-                       <img src="images/kitsch/kitsch_titel.png" class="p9_kitsch_title">
-                        <div class=skip>Skip Chapter</div>
+                    <img src="images/kitsch/kitsch_titel.png" class="p9_kitsch_title">
+                    <div class=skip>Skip Chapter</div>
                 </div>
-                <div class="slide p9_1">
-                    <div class="container">
-                        <div class="chapter_title">KITSCH <br>1/20
-                        </div>
+                <div class="slide p8">
+                    <div class="scrolling-wrapper">    
+                        <!-- START SERIES-->
+                        <div><img class="card" src="images/avantgarde/avantgarde2.jpg" alt="Avantgarde"></div>
+                        <div><img class="card" src="images/avantgarde/avantgarde3.jpg" alt="Avantgarde"></div>
+                        <div><img class="card" src="images/avantgarde/avantgarde4.jpg" alt="Avantgarde"></div>
+                        <div><img class="card" src="images/avantgarde/avantgarde5.jpg" alt="Avantgarde"></div>
+                        <div><img class="card" src="images/avantgarde/avantgarde6.jpg" alt="Avantgarde"></div>
+                        <div><img class="card" src="images/avantgarde/avantgarde7.jpg" alt="Avantgarde"></div>
+                        <div><img class="card" src="images/avantgarde/avantgarde8.jpg" alt="Avantgarde"></div>
+                        <div><img class="card" src="images/avantgarde/avantgarde9.jpg" alt="Avantgarde"></div>
+                        <div><img class="card" src="images/avantgarde/avantgarde10.jpg" alt="Avantgarde"></div>
+                        <div><img class="card" src="images/avantgarde/avantgarde11.jpg" alt="Avantgarde"></div>
                     </div>
                 </div>
             </div>
+
             <div class="section s10">
                 <div class="slide p10">
                     <div class="container">
@@ -519,8 +551,6 @@
         continuousVertical: true,
         continuousHorizontal: true,
         lazyLoading: true,
-        scrollOverflow: true
-
 
     });</script>
 
@@ -585,5 +615,7 @@ var x = setInterval(function() {
   }
 }, 1000);
 </script>
+
+
     
 </html>
