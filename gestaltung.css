@@ -46,7 +46,7 @@ body {
 
 .header {
   width: 50%;
-  color: rgb(200, 200, 200);
+  color: black;
   padding-top: 4.5vw;
   padding-left: 5vw;
 }
@@ -58,6 +58,62 @@ body {
   padding-left: 45px;
   width: 50%;
   color: rgb(200, 200, 200);
+}
+
+.menu {
+  position: fixed;
+  background-color: black;
+  width: 80vw;
+  height: 100vh;
+  z-index: 99;
+  box-sizing: border-box;
+  border-right: solid white 1px;
+  border-left: solid white 1px;
+  /*transform: translateX(-81vw);*/
+}
+
+.menu_section {
+  color: white;
+  font-size: 4vw;
+  font-family: "everett";
+  height: 5vh;
+  width: calc(80vw - 1px);
+  padding-left: 5vw;
+  padding-right: 5vw;
+
+  border-top: white solid 1px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+a.menu_section {
+  text-decoration: none;
+}
+
+#menu_big {
+  height: 35vh;
+  padding-top: 4.5vw;
+  display: block;
+}
+
+#menu_close {
+  border-bottom: solid white 1px;
+  height: 10vh;
+  text-align: center;
+  justify-content: center;
+}
+
+.transform {
+  -webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.transform-active {
+  transform: translateX(2vw);
 }
 
 .section {
@@ -111,10 +167,12 @@ body {
 
 #timer_two {
   font-family: "digi";
+  font-size: 24px;
 }
 
 #timer_three {
   font-family: "digi";
+  font-size: 24px;
 }
 
 .magazine_title {
@@ -194,28 +252,54 @@ img {
 }
 
 .p3_1 {
-  background: url("images/paradigm/light.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  opacity: 100%;
 }
 
 .p3_adapt {
   background: url("images/paradigm/adapt.png");
   background-size: cover;
   background-position: 50% 50%;
+  background-color: red;
 }
 
+.p3_hot {
+  background: url("images/paradigm/hot.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: red;
+}
+
+.p3_open {
+  background: url("images/paradigm/open.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: red;
+}
+
+.p3_masturbating {
+  background: url("images/paradigm/masturbating.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: red;
+}
+
+.p3_ipo {
+  background: url("images/paradigm/ipo.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: red;
+}
 .p3_ideas {
   background: url("images/paradigm/ideas.png");
   background-size: cover;
   background-position: 50% 50%;
+  background-color: red;
 }
 
 .p3_adam {
   background: url("images/paradigm/adam.png");
   background-size: cover;
   background-position: 50% 50%;
+  background-color: red;
 }
 
 .p4 {
@@ -236,6 +320,12 @@ img {
   padding-top: 10vw;
 }
 
+.p6_title {
+  background: url("images/high_and_low/high_title.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .p6_trend {
   background: url("images/high_and_low/trend.png");
   background-size: cover;
@@ -253,6 +343,12 @@ img {
   text-align: left;
   height: 100%;
   width: auto;
+}
+
+.p7_title {
+  background: url("images/Referenz/dump_title.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .p8_title {
@@ -277,6 +373,10 @@ img {
   background: url("images/love_letter/love.jpg");
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.p11 {
+  background-color: white;
 }
 
 .newsletter_text {
@@ -329,12 +429,27 @@ a.newsletter_text:hover {
   padding-bottom: 4.5vw;
   opacity: 50%;
 }
+.continue {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  display: block;
+  height: 100vw;
+  padding-top: 93vw;
+  box-sizing: border-box;
+  color: rgb(200, 200, 200);
+  opacity: 50%;
+}
 
 .chapter_title {
   width: 100vw;
   position: absolute;
   color: rgb(200, 200, 200);
   font-family: "everett";
+  color: black;
   top: 0;
   right: 0;
   left: 0;
@@ -353,16 +468,14 @@ h1 {
 }
 
 .further_reading {
-  background-color: white;
-  top: 0;
-  color: blue;
+  font-family: "Times New Roman", Times, serif;
   font-size: 4vw;
   text-align: center;
   padding-left: 5vw;
   padding-right: 5vw;
-  padding-top: 4.5vw;
-  height: 100%;
+  height: auto;
   width: 90vw;
+  color: red;
 }
 
 .credits {
@@ -410,6 +523,13 @@ h1 {
     display: none;
   }
   .date_text {
+    display: none;
+  }
+  .header_container {
+    width: 100vw;
+  }
+
+  .menu {
     display: none;
   }
 }
