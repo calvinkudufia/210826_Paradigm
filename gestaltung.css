@@ -61,6 +61,7 @@ body {
 }
 
 .menu {
+  display: none;
   position: fixed;
   background-color: black;
   width: 80vw;
