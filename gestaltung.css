@@ -87,8 +87,6 @@ body {
   transition: 3s;
   -webkit-transition: 3s;
   display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .menu_section {
