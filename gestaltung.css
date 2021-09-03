@@ -251,9 +251,6 @@ img {
   background-position: 50% 50%;
 }
 
-.p3_1 {
-}
-
 .p3_adapt {
   background: url("images/paradigm/adapt.png");
   background-size: cover;
@@ -349,6 +346,11 @@ img {
   background: url("images/Referenz/dump_title.jpg");
   background-size: cover;
   background-position: 50% 50%;
+}
+
+#s8_title_card {
+  width: 100vw;
+  height: auto;
 }
 
 .p8_title {

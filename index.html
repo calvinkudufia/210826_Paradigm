@@ -112,9 +112,9 @@
                             <br><br>
                             Text: Kay Kasparhauser & Katharina Korbjuhn
                         </div>
-                        <div class=skip>Skip Chapter</div>
                     </div>
                     <div class="container">
+                        <div class=skip>Skip Chapter</div>
                         <div class="continue">continue</div>
                     </div>
                 </div>
@@ -367,6 +367,10 @@
             <div class="section s5">
                 <div id="s5" class="slide p5">
                     <div class="container">
+                        <div class=skip>Skip Chapter</div>
+                        <div class="continue">continue</div>
+                    </div>
+                    <div class="container">
                         <div class=p5_image>
                             <img src="images/meme/meme1.png">
                         </div>
@@ -378,7 +382,8 @@
                 <div id="s6" class="slide p6_title">
                     <div class="container">
                         <div class=skip>Skip Chapter</div>
-                    </div> 
+                        <div class="continue">continue</div>
+                    </div>
                 </div>
                 <div class="slide p6_trend"></div>
             </div>
@@ -387,7 +392,8 @@
                 <div id="s7" class="slide p7_title">
                     <div class="container">
                         <div class=skip>Skip Chapter</div>
-                    </div> 
+                        <div class="continue">continue</div>
+                    </div>
                 </div>
                 <div class="slide p7">
                     <div class="scrolling-wrapper">    
@@ -414,15 +420,22 @@
             </div>
 
             <div class="section s8">
-                <div class="scrolling-wrapper">
-                    <div><img class="card" src="images/avantgarde/avantgarde.jpg" alt="Avantgarde">
+                <div id="s8" class="scrolling-wrapper">
+                    <div><img id="s8_title_card" class="card" src="images/avantgarde/avantgarde.jpg" alt="Avantgarde">
                         <p class=skip>Skip Chapter</p></div>
     
-                    <!--  TODO ADD OTHER PHOTOS-->
+                    <!--START EDITORIAL-->
     
                     <div><img class="card" src="images/avantgarde/avantgarde2.jpg" alt="Avantgarde"></div>
                     <div><img class="card" src="images/avantgarde/avantgarde3.jpg" alt="Avantgarde"></div>
                     <div><img class="card" src="images/avantgarde/avantgarde4.jpg" alt="Avantgarde"></div>
+                    <div><img class="card" src="images/avantgarde/avantgarde5.jpg" alt="Avantgarde"></div>
+                    <div><img class="card" src="images/avantgarde/avantgarde6.jpg" alt="Avantgarde"></div>
+                    <div><img class="card" src="images/avantgarde/avantgarde7.jpg" alt="Avantgarde"></div>
+                    <div><img class="card" src="images/avantgarde/avantgarde8.jpg" alt="Avantgarde"></div>
+                    <div><img class="card" src="images/avantgarde/avantgarde9.jpg" alt="Avantgarde"></div>
+                    <div><img class="card" src="images/avantgarde/avantgarde10.jpg" alt="Avantgarde"></div>
+                    <div><img class="card" src="images/avantgarde/avantgarde11.jpg" alt="Avantgarde"></div>
                 </div>
                 <script>
                     const slider = document.querySelector(".scrolling-wrapper");
@@ -456,63 +469,12 @@
                 </script>
             </div>
 
-            <div class="section s8">
-                    <div id="s8" class="slide p8_title">
-                        <div class="container">
-                            <div class=skip>Skip Chapter</div>
-                        </div> 
-                    </div>
-                    <div class="slide p8">
-                        <div class="scrolling-wrapper">    
-                            <!-- START SERIES-->
-                            <div><img class="card" src="images/avantgarde/avantgarde2.jpg" alt="Avantgarde"></div>
-                            <div><img class="card" src="images/avantgarde/avantgarde3.jpg" alt="Avantgarde"></div>
-                            <div><img class="card" src="images/avantgarde/avantgarde4.jpg" alt="Avantgarde"></div>
-                            <div><img class="card" src="images/avantgarde/avantgarde5.jpg" alt="Avantgarde"></div>
-                            <div><img class="card" src="images/avantgarde/avantgarde6.jpg" alt="Avantgarde"></div>
-                            <div><img class="card" src="images/avantgarde/avantgarde7.jpg" alt="Avantgarde"></div>
-                            <div><img class="card" src="images/avantgarde/avantgarde8.jpg" alt="Avantgarde"></div>
-                            <div><img class="card" src="images/avantgarde/avantgarde9.jpg" alt="Avantgarde"></div>
-                            <div><img class="card" src="images/avantgarde/avantgarde10.jpg" alt="Avantgarde"></div>
-                            <div><img class="card" src="images/avantgarde/avantgarde11.jpg" alt="Avantgarde"></div>
-                        </div>
-                        <script>
-                            const slider = document.querySelector(".scrolling-wrapper");
-                            let mouseDown = false;
-                            let startX, scrollLeft;
-                        
-                            let startDragging = function (e) {
-                                mouseDown = true;
-                                startX = e.pageX - slider.offsetLeft;
-                                scrollLeft = slider.scrollLeft;
-                                console.log("Drag works");
-                            };
-                            let stopDragging = function (event) {
-                                mouseDown = false;
-                            };
-                        
-                            slider.addEventListener('mousemove', (e) => {
-                                e.preventDefault();
-                                if (!mouseDown) {
-                                    return;
-                                }
-                                const x = e.pageX - slider.offsetLeft;
-                                const scroll = x - startX;
-                                slider.scrollLeft = scrollLeft - scroll;
-                            });
-                        
-                            // Add the event listeners
-                            slider.addEventListener('mousedown', startDragging, false);
-                            slider.addEventListener('mouseup', stopDragging, false);
-                            slider.addEventListener('mouseleave', stopDragging, false);
-                        </script>
-                    </div>
-            </div>
-
             <div class="section s9">
                 <div id="s9" class="slide p9_dance">
-                    <img src="images/kitsch/kitsch_titel.png" class="p9_kitsch_title">
-                    <div class=skip>Skip Chapter</div>
+                    <div class="container">
+                        <div class=skip>Skip Chapter</div>
+                        <div class="continue">continue</div>
+                    </div>
                 </div>
                 <div class="slide p9">
                     <div class="scrolling-wrapper">    
@@ -526,7 +488,8 @@
                 <div id="s10" class="slide p10">
                     <div class="container">
                         <div class=skip>Skip Chapter</div>
-                    </div> 
+                        <div class="continue">continue</div>
+                    </div>
                 </div>
             </div>
 
