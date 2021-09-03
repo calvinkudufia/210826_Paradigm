@@ -86,7 +86,6 @@ body {
   animation-duration: 1s;
   transition: 3s;
   -webkit-transition: 3s;
-  display: -webkit-box;
 }
 
 .menu_section {
