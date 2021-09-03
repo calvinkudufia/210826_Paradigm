@@ -13,6 +13,18 @@
   font-family: "berthold";
 }
 
+@keyframes menu_transition {
+  0% {
+    transform: translateX(-81vw);
+  }
+  70% {
+    transform: translateX(-81vw);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -61,7 +73,6 @@ body {
 }
 
 .menu {
-  display: none;
   position: fixed;
   background-color: black;
   width: 80vw;
@@ -70,7 +81,11 @@ body {
   box-sizing: border-box;
   border-right: solid white 1px;
   border-left: solid white 1px;
-  /*transform: translateX(-81vw);*/
+  transform: translateX(0);
+  animation-name: menu_transition;
+  animation-duration: 10s;
+  transition: 3s;
+  -webkit-transition: 3s;
 }
 
 .menu_section {
@@ -328,6 +343,15 @@ img {
   background: url("images/high_and_low/trend.png");
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.s7 {
+  background-color: black;
+}
+
+#s7_title_card {
+  width: 100vw;
+  height: auto;
 }
 
 .p7_image {
