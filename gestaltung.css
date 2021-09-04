@@ -86,7 +86,6 @@ body {
   animation-duration: 1s;
   transition: 3s;
   -webkit-transition: 3s;
-  max-height: -webkit-fill-available;
 }
 
 .menu_section {
@@ -195,7 +194,7 @@ a.menu_section {
 .magazine_title {
   position: relative;
   font-family: "berthold";
-  font-size: 1, 3px;
+  font-size: 1.3px;
   line-height: 1.5vw;
   text-align: center;
   padding-left: 45px;
@@ -375,6 +374,10 @@ img {
   background-position: 50% 50%;
 }
 
+.s8 {
+  touch-action: pan-x;
+}
+
 #s8_title_card {
   width: 100vw;
   height: auto;
@@ -505,6 +508,10 @@ h1 {
   height: auto;
   width: 90vw;
   color: red;
+}
+
+.s12 {
+  background-color: black;
 }
 
 .credits {
