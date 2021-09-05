@@ -166,40 +166,35 @@
 
 .loading_two {
   color: white;
-  width: 33.33%;
+  width: 33.33vw;
   display: none;
   font-size: 20px;
 }
 
 .loading_three {
   color: white;
-  width: 33.33%;
+  width: 33.33vw;
   display: none;
   font-size: 20px;
 }
 
-#timer_two {
-  padding-top: 40px;
-}
-
-#timer_three {
-  padding-top: 40px;
+.location {
+  font-size: 20px;
 }
 
 @media screen and (min-width: 812px) {
   .loading_one {
-    width: 33.33%;
-    float: left;
-    overflow: visible;
+    display: block;
+    width: 33.33vw;
   }
   .loading_two {
     display: block;
-    margin-left: 33.33%;
+    margin-left: 33.33vw;
   }
 
   .loading_three {
     display: block;
-    margin-left: 66.66%;
+    margin-left: 66.66vw;
   }
 
   .boockup {

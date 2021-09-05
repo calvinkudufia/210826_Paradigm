@@ -52,7 +52,7 @@ body {
   top: 0vw;
   left: 0;
   font-family: "everett";
-  font-size: 4vw;
+  font-size: 3.5vw;
   z-index: 99;
 }
 
@@ -91,7 +91,7 @@ body {
 
 .menu_section {
   color: white;
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-family: "everett";
   height: 5%;
   width: calc(80vw - 1px);
@@ -144,6 +144,7 @@ a.menu_section {
 }
 
 .scrolling-wrapper {
+  padding-left: 0;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -152,6 +153,7 @@ a.menu_section {
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
+  flex-wrap: nowrap;
 }
 
 .card {
@@ -181,25 +183,37 @@ a.menu_section {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+#matches_cover {
+  width: auto;
+  height: 100%;
+  transform: rotate(-10deg);
+}
+
+#timer_one {
+  display: none;
+  font-family: "digi";
+  font-size: 24px;
+  padding-top: 40px;
+}
 
 #timer_two {
   font-family: "digi";
   font-size: 24px;
+  padding-top: 40px;
 }
 
 #timer_three {
   font-family: "digi";
   font-size: 24px;
+  padding-top: 40px;
 }
 
 .magazine_title {
   position: relative;
   font-family: "berthold";
-  font-size: 1, 3px;
-  line-height: 1.5vw;
+  font-size: 1.5vw;
+  line-height: 1.9vw;
   text-align: center;
-  padding-left: 45px;
-  padding-right: 45px;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -213,10 +227,22 @@ a.menu_section {
   margin-right: auto;
   margin-top: auto;
   margin-bottom: auto;
+  justify-content: center;
+}
+
+.square_one {
+  display: flex;
+  border: 0px;
+  height: 85vh;
+}
+
+p1 {
+  font-size: 3vw;
 }
 
 .text {
   top: 0;
+  font-size: 4.5vw;
   text-align: left;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -353,7 +379,17 @@ img {
 
 #s7_title_card {
   width: 100vw;
-  height: auto;
+  height: 100vh;
+  padding-left: 0;
+  background: url("images/Referenz/dump.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#empty {
+  width: 100vw;
+  height: 100vh;
+  padding-left: 0;
 }
 
 .p7_image {
@@ -377,7 +413,11 @@ img {
 
 #s8_title_card {
   width: 100vw;
-  height: auto;
+  height: 100vh;
+  padding-left: 0;
+  background: url("images/avantgarde/avantgarde.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .p8_title {
@@ -408,6 +448,22 @@ img {
   background-color: white;
 }
 
+.further_reading {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 5vw;
+  text-align: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  height: auto;
+  width: 90vw;
+  color: black;
+}
+
+p11 {
+  font-family: "everett";
+  font-size: 3vw;
+}
+
 .newsletter_text {
   position: absolute;
   width: 100%;
@@ -415,7 +471,7 @@ img {
   font-family: "everett";
   bottom: 0;
   left: 0;
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-align: left;
   padding-left: 5vw;
   padding-bottom: 4.5vw;
@@ -438,7 +494,7 @@ a.newsletter_text:hover {
   font-family: "everett";
   bottom: 0;
   right: 0;
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-align: right;
   padding-left: 5vw;
   padding-right: 5vw;
@@ -453,7 +509,7 @@ a.newsletter_text:hover {
   bottom: 0;
   right: 0;
   left: 0;
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-align: center;
   padding-bottom: 4.5vw;
   opacity: 50%;
@@ -482,7 +538,7 @@ a.newsletter_text:hover {
   top: 0;
   right: 0;
   left: 0;
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-align: right;
   padding-top: 4.5vw;
   padding-right: 5vw;
@@ -494,17 +550,6 @@ h1 {
   font-size: 12vw;
   text-decoration: underline blue;
   padding-left: 0vw;
-}
-
-.further_reading {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 4vw;
-  text-align: center;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  height: auto;
-  width: 90vw;
-  color: red;
 }
 
 .s12 {
@@ -522,6 +567,10 @@ h1 {
   height: 100%;
   width: 45vw;
   float: left;
+}
+
+p12 {
+  font-size: 1.5vw;
 }
 
 .credits_two {
@@ -586,5 +635,13 @@ h1 {
     padding-bottom: 40px;
     padding-left: 45px;
     color: rgb(100, 100, 100);
+  }
+
+  #timer_one {
+    display: block;
+  }
+
+  .square_one {
+    height: calc(60vw / 3 * 1.4);
   }
 }
