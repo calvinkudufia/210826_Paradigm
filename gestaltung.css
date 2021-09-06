@@ -278,6 +278,35 @@ img {
   opacity: 100%;
 }
 
+.s3_images_100 {
+  width: 90vw;
+  padding-left: 5vw;
+  padding-top: 4.5vw;
+}
+.images_50_wrapper {
+  width: 100vw;
+  display: flex;
+}
+
+.s3_images_50 {
+  width: 42.5vw;
+  padding-left: 5vw;
+  padding-top: 4.5vw;
+  float: left;
+}
+.s3_footnotes {
+  font-size: 3vw;
+  text-align: left;
+  padding-left: 5vw;
+}
+
+.s3_footnotes_50 {
+  width: 42.5vw;
+  font-size: 3vw;
+  text-align: left;
+  padding-left: 5vw;
+}
+
 .paradigm_title_text {
   width: 90vw;
   text-align: center;
@@ -381,7 +410,7 @@ img {
   width: 100vw;
   height: 100vh;
   padding-left: 0;
-  background: url("images/Referenz/dump.jpg");
+  background: url("images/Referenz/dump_title.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -558,9 +587,10 @@ h1 {
 
 .credits {
   background-color: black;
+  text-transform: uppercase;
   top: 0;
   color: white;
-  font-size: 2.75vw;
+  font-size: 3vw;
   text-align: left;
   padding-left: 5vw;
   padding-top: 4.5vw;
