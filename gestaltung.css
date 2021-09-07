@@ -281,10 +281,23 @@ img {
   width: 90vw;
   padding-left: 5vw;
   padding-top: 4.5vw;
+  float: left;
 }
 .images_50_wrapper {
+  width: 50vw;
+  float: left;
+}
+
+.images_turned_wrapper {
+  width: 50vw;
+  float: left;
+  transform: rotate(10deg);
+  padding-left: 6vw;
+}
+
+.images_turned_wrapper_100 {
   width: 100vw;
-  display: flex;
+  float: left;
 }
 
 .s3_images_50 {
@@ -304,6 +317,7 @@ img {
   font-size: 3vw;
   text-align: left;
   padding-left: 5vw;
+  float: left;
 }
 
 .paradigm_title_text {
@@ -364,6 +378,13 @@ img {
   background-color: red;
 }
 
+.p3_graph_one {
+  background: url("images/paradigm/graph_one.png");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: red;
+}
+
 .p3_adam {
   background: url("images/paradigm/adam.png");
   background-size: cover;
@@ -375,6 +396,10 @@ img {
   background: url("images/open_source/open.gif");
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.s5 {
+  background-color: white;
 }
 
 .p5_image {
@@ -475,6 +500,32 @@ img {
   background: url("images/love_letter/love.jpg");
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.gallery_left {
+  background-color: violet;
+  width: 47.5vw;
+  height: 100vh;
+  float: left;
+  padding-right: 2.5vw;
+}
+
+.gallery_right {
+  background-color: teal;
+  width: 47.25vw;
+  height: 100vh;
+  float: left;
+  padding-left: 2.5vw;
+}
+
+.love_letter_image {
+  float: left;
+  width: auto;
+  height: calc(100vh / 6);
+  box-sizing: border-box;
+  padding-top: 1vw;
+  padding-left: 1vw;
+  margin: auto;
 }
 
 .p11 {
