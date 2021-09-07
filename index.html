@@ -625,7 +625,7 @@
                         <div class="continue">CONTINUE</div>
                     </div>
                 </div>
-                <div id="s10" class="slide p10">
+                <div id="s10" class="slide p10_1">
                     <div class="gallery_left">
                             <div class="gallery_image">
                                 <img class="love_letter_image" src="images/love_letter/gallery/1.jpg" alt="">
@@ -641,8 +641,8 @@
                                 <img class="love_letter_image" src="images/love_letter/gallery/11.jpg" alt="">
                                 <img class="love_letter_image" src="images/love_letter/gallery/12.jpg" alt="">
                             </div>
-
                     </div>
+
                     <div class="gallery_right">
                         <img class="love_letter_image" src="images/love_letter/gallery/13.jpg" alt="">
                         <img class="love_letter_image" src="images/love_letter/gallery/14.jpg" alt="">
@@ -657,6 +657,34 @@
                         <img class="love_letter_image" src="images/love_letter/gallery/23.jpg" alt="">
                         <img class="love_letter_image" src="images/love_letter/gallery/24.jpg" alt="">
                     </div>
+
+                    <div id="big-image">
+                                    <img src="images/love_letter/gallery/1.jpg" alt="">
+                                    <img src="images/love_letter/gallery/2.jpg" alt="">
+                                    <img src="images/love_letter/gallery/3.jpg" alt="">
+                                    <img src="images/love_letter/gallery/4.jpg" alt="">
+                                    <img src="images/love_letter/gallery/5.jpg" alt="">
+                                    <img src="images/love_letter/gallery/6.jpg" alt="">
+                                    <img src="images/love_letter/gallery/7.jpg" alt="">
+                                    <img src="images/love_letter/gallery/8.jpg" alt="">
+                                    <img src="images/love_letter/gallery/9.jpg" alt="">
+                                    <img src="images/love_letter/gallery/10.jpg" alt="">
+                                    <img src="images/love_letter/gallery/11.jpg" alt="">
+                                    <img src="images/love_letter/gallery/12.jpg" alt=""> 
+                                    <img src="images/love_letter/gallery/13.jpg" alt="">
+                                    <img src="images/love_letter/gallery/14.jpg" alt="">
+                                    <img src="images/love_letter/gallery/15.jpg" alt="">
+                                    <img src="images/love_letter/gallery/16.jpg" alt="">
+                                    <img src="images/love_letter/gallery/17.jpg" alt="">
+                                    <img src="images/love_letter/gallery/18.jpg" alt="">
+                                    <img src="images/love_letter/gallery/19.jpg" alt="">
+                                    <img src="images/love_letter/gallery/20.jpg" alt="">
+                                    <img src="images/love_letter/gallery/21.jpg" alt="">
+                                    <img src="images/love_letter/gallery/22.jpg" alt="">
+                                    <img src="images/love_letter/gallery/23.jpg" alt="">
+                                    <img src="images/love_letter/gallery/24.jpg" alt="">
+                        </div>
+
                 </div>
             </div>
 
@@ -817,6 +845,30 @@
         dragAndMove: true,
 
     });</script>
+
+
+
+<script>
+            //gallery script 
+$(function(){
+    $("#big-image img:eq(0)").nextAll().hide();
+    $(".gallery_image img").click(function(e){
+        var index = $(this).index();
+        $("#big-image img").eq(index).show().siblings().hide();
+    });
+});
+</script>
+
+<script>
+    //gallery script 
+$(function(){
+$("#big-image img:eq(0)").nextAll().hide();
+$(".gallery_right img").click(function(e){
+var index = $(this).index();
+$("#big-image img").eq(index).show().siblings().hide();
+});
+});
+</script>
 
 <script>
 window.addEventListener('resize', () => {
