@@ -93,7 +93,7 @@ body {
   color: white;
   font-size: 3.5vw;
   font-family: "everett";
-  height: 5%;
+  height: calc(var(--vh, 1vh) * 5);
   width: calc(80vw - 1px);
   padding-left: 5vw;
   padding-right: 5vw;
