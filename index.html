@@ -656,10 +656,16 @@
     });</script>
 
 <script>
-$(document).on('click', '.s7', function(){
+$(document).on('swipedown', '.scrolling-wrapper', function(){
   fullpage_api.moveSectionUp();
 });
 </script>
+
+<script>
+    $(document).on('swipeup', '.scrolling-wrapper', function(){
+      fullpage_api.moveSectionDown();
+    });
+    </script>
 
 <script>
 window.addEventListener('resize', () => {
