@@ -76,8 +76,8 @@ body {
   position: fixed;
   background-color: black;
   width: 80vw;
-  height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  min-height: 100vh;
+  height: -webkit-fill-available;
   z-index: 99;
   box-sizing: border-box;
   border-right: solid white 1px;
@@ -93,7 +93,7 @@ body {
   color: white;
   font-size: 3.5vw;
   font-family: "everett";
-  height: calc(var(--vh, 1vh) * 5);
+  height: 5%;
   width: calc(80vw - 1px);
   padding-left: 5vw;
   padding-right: 5vw;
