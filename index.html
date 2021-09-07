@@ -630,9 +630,14 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.extensions.min.js" 
         integrity="sha512-v0jjVvFpZqb1BcXhgLbaBDRKwZ09IpWFZL5NHTNbW9MlSjhZihkxEz2uNeMGd6HuK1qnSEL6JdyTr24ZHlgKow==" 
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     </body>
     
     <script src="main.js"> </script>
+
+    <script>
+
+    </script>
 
     <script>
     new fullpage('#fullpage', {
@@ -646,9 +651,16 @@
         lazyLoading: true,
         scrollOverflow:true,
         dragAndMove: true,
-        normalScrollElements: ".s7",
+        normalScrollElements:  ".s7",
+
 
     });</script>
+
+<script>
+$(document).on('swipedown', '.s7', function(){
+  fullpage_api.moveSectionUp();
+});
+</script>
 
 <script>
 window.addEventListener('resize', () => {
