@@ -649,7 +649,6 @@
         continuousVertical: true,
         continuousHorizontal: true,
         lazyLoading: true,
-        scrollOverflow:true,
         dragAndMove: true,
         normalScrollElements:  ".s7",
 
@@ -657,7 +656,7 @@
     });</script>
 
 <script>
-$(document).on('swipedown', '.s7', function(){
+$(document).on('click', '.s7', function(){
   fullpage_api.moveSectionUp();
 });
 </script>
