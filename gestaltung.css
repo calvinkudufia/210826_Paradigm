@@ -182,6 +182,7 @@ a.menu_section {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+
 #matches_cover {
   width: auto;
   height: 100%;
@@ -235,7 +236,7 @@ a.menu_section {
   height: 85vh;
 }
 
-p1 {
+.equation_small {
   font-size: 3vw;
 }
 
@@ -281,23 +282,11 @@ img {
   width: 90vw;
   padding-left: 5vw;
   padding-top: 4.5vw;
-  float: left;
 }
+
 .images_50_wrapper {
-  width: 50vw;
-  float: left;
-}
-
-.images_turned_wrapper {
-  width: 50vw;
-  float: left;
-  transform: rotate(10deg);
-  padding-left: 6vw;
-}
-
-.images_turned_wrapper_100 {
   width: 100vw;
-  float: left;
+  display: flex;
 }
 
 .s3_images_50 {
@@ -306,6 +295,7 @@ img {
   padding-top: 4.5vw;
   float: left;
 }
+
 .s3_footnotes {
   font-size: 3vw;
   text-align: left;
@@ -317,7 +307,6 @@ img {
   font-size: 3vw;
   text-align: left;
   padding-left: 5vw;
-  float: left;
 }
 
 .paradigm_title_text {
@@ -371,15 +360,9 @@ img {
   background-position: 50% 50%;
   background-color: red;
 }
+
 .p3_ideas {
   background: url("images/paradigm/ideas.png");
-  background-size: cover;
-  background-position: 50% 50%;
-  background-color: red;
-}
-
-.p3_graph_one {
-  background: url("images/paradigm/graph_one.png");
   background-size: cover;
   background-position: 50% 50%;
   background-color: red;
@@ -396,10 +379,6 @@ img {
   background: url("images/open_source/open.gif");
   background-size: cover;
   background-position: 50% 50%;
-}
-
-.s5 {
-  background-color: white;
 }
 
 .p5_image {
@@ -428,11 +407,6 @@ img {
 
 .s7 {
   background-color: black;
-  overflow: scroll;
-  cursor: move; /* fallback if grab cursor is unsupported */
-  cursor: grab;
-  cursor: -moz-grab;
-  cursor: -webkit-grab;
 }
 
 #s7_title_card {
@@ -444,7 +418,7 @@ img {
   background-position: 50% 50%;
 }
 
-#empty {
+.empty {
   width: 100vw;
   height: 100vh;
   padding-left: 0;
@@ -500,55 +474,6 @@ img {
   background: url("images/love_letter/love.jpg");
   background-size: cover;
   background-position: 50% 50%;
-  width: 100%;
-  height: 100%;
-}
-
-.p10_1 {
-  background-image: none;
-  background-color: white;
-}
-
-.gallery_left {
-  width: 50vw;
-  height: 100vh;
-  float: left;
-  box-sizing: border-box;
-  padding-right: 2.5vw;
-}
-
-.gallery_right {
-  width: 50vw;
-  height: 100vh;
-  float: left;
-  box-sizing: border-box;
-  padding-left: 2.5vw;
-}
-
-.love_letter_image {
-  float: left;
-  width: auto;
-  max-width: 23vw;
-  height: auto;
-  max-height: calc(100vh / 6);
-  box-sizing: border-box;
-  padding-top: 1vw;
-  padding-left: 1vw;
-  margin: auto;
-}
-
-#big-image {
-  position: absolute;
-  width: 80vw;
-  height: auto;
-  border: red solid 1px;
-  justify-content: center;
-  vertical-align: middle;
-  margin: auto;
-  display: flex;
-  margin-left: 10vw;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .p11 {
@@ -564,11 +489,6 @@ img {
   height: auto;
   width: 90vw;
   color: black;
-}
-
-p11 {
-  font-family: "everett";
-  font-size: 3vw;
 }
 
 .newsletter_text {
@@ -621,6 +541,7 @@ a.newsletter_text:hover {
   padding-bottom: 4.5vw;
   opacity: 50%;
 }
+
 .continue {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
@@ -639,6 +560,7 @@ a.newsletter_text:hover {
 .chapter_title {
   width: 100vw;
   position: absolute;
+  color: rgb(200, 200, 200);
   font-family: "everett";
   color: black;
   top: 0;
@@ -667,7 +589,7 @@ h1 {
   text-transform: uppercase;
   top: 0;
   color: white;
-  font-size: 2.5vw;
+  font-size: 3vw;
   text-align: left;
   padding-left: 5vw;
   padding-top: 4.5vw;
@@ -676,7 +598,7 @@ h1 {
   float: left;
 }
 
-p12 {
+.headline_credits {
   font-size: 1.5vw;
 }
 
@@ -705,15 +627,19 @@ p12 {
   .s12 {
     display: none;
   }
+
   * {
     color: rgb(100, 100, 100);
   }
+
   .loading_text {
     display: none;
   }
+
   .date_text {
     display: none;
   }
+
   .header_container {
     width: 100vw;
   }
