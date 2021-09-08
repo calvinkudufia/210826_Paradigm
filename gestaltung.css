@@ -158,7 +158,8 @@ a.menu_section {
 .card {
   flex: 0 0 auto;
   width: auto;
-  height: 100vh;
+  max-height: 100vh;
+  height: -webkit-fill-available;
 }
 
 .loading_text {
