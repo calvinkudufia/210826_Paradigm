@@ -336,6 +336,19 @@ img {
   float: left;
 }
 
+.images_turned_wrapper {
+  width: 35vw;
+  float: left;
+  transform: rotate(10deg);
+  padding-top: 7vw;
+  padding-left: 10vw;
+}
+
+.images_turned_wrapper_100 {
+  width: 100vw;
+  float: left;
+}
+
 .paradigm_title_text {
   width: 90vw;
   text-align: center;
@@ -400,6 +413,12 @@ img {
   background-size: cover;
   background-position: 50% 50%;
   background-color: red;
+}
+
+.p3_graph_one {
+  background: url("images/paradigm/graph_one.png");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .p4 {
@@ -483,6 +502,19 @@ img {
   background: url("images/avantgarde/avantgarde.jpg");
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.text_wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.s8_text {
+  width: 90vw;
+  height: auto;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .p8_title {
@@ -655,9 +687,7 @@ a.newsletter_text:hover {
 .chapter_title {
   width: 100vw;
   position: absolute;
-  color: rgb(200, 200, 200);
   font-family: "everett";
-  color: black;
   top: 0;
   right: 0;
   left: 0;
