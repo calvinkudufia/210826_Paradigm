@@ -252,6 +252,11 @@ a.menu_section {
   text-indent: 10vw;
 }
 
+.text_paradigm {
+  color: white;
+  opacity: 80%;
+}
+
 .equation {
   padding-left: 15vw;
 }
@@ -291,28 +296,44 @@ img {
 }
 
 .images_50_wrapper {
-  width: 100vw;
-  display: flex;
+  width: 50vw;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5vw;
+  padding-right: 2.5vw;
+  padding-top: 4.5vw;
+  box-sizing: border-box;
+}
+
+.images_50_wrapper_right {
+  width: 50vw;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 2.5vw;
+  padding-right: 5vw;
+  padding-top: 4.5vw;
+  box-sizing: border-box;
 }
 
 .s3_images_50 {
-  width: 42.5vw;
-  padding-left: 5vw;
-  padding-top: 4.5vw;
-  float: left;
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 
 .s3_footnotes {
+  float: left;
+  width: 90%;
   font-size: 3vw;
   text-align: left;
   padding-left: 5vw;
 }
 
 .s3_footnotes_50 {
-  width: 42.5vw;
+  width: 100%;
   font-size: 3vw;
   text-align: left;
-  padding-left: 5vw;
+  float: left;
 }
 
 .paradigm_title_text {
@@ -383,6 +404,12 @@ img {
 
 .p4 {
   background: url("images/open_source/open.gif");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p5_title {
+  background: url("images/meme/meme_title_card.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
