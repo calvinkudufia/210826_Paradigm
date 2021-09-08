@@ -15,6 +15,7 @@
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
+    <script type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href=""/>
 
@@ -50,20 +51,6 @@
 
 <div id="fullpage">
     <div class="section s1">
-
-        <!--                 <div class="container loading_one">
-                            <div class="loading_text">GUIDE TO A<br>NEW CREATIVE<br>PARADIGM</div>
-                            <div class="location"> <br> <br> NEW YORK</div>
-                            <a class="newsletter_text nav_text" href="http://eepurl.com/hGhtGH" target="blank" >Subscribe to Newsletter</a>
-                            <div class="date_text nav_text"t>09|21 New York</div>
-
-                            <div class="magazine_container">
-                            <div class="wrapper square">
-                            <div class="square loading_one_cover"></div>
-                            </div>
-                            </div>
-                        </div>
-         -->
         <div class="container loading_one">
             <div class="loading_text">GUIDE TO A<br>NEW CREATIVE<br>PARADIGM</div>
             <a class="newsletter_text nav_text" href="http://eepurl.com/hGhtGH" target="blank">Subscribe to
@@ -727,47 +714,26 @@
             </div>
 
             <div class="gallery_right">
-                <img class="love_letter_image" src="images/love_letter/gallery/13.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/14.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/15.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/16.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/17.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/18.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/19.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/20.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/21.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/22.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/23.jpg" alt="">
-                <img class="love_letter_image" src="images/love_letter/gallery/24.jpg" alt="">
+                <div class="gallery_image">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/14.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/13.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/16.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/15.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/18.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/17.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/20.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/19.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/22.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/21.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/24.jpg" alt="">
+                    <img class="love_letter_image_right" src="images/love_letter/gallery/23.jpg" alt="">
+                </div>   
             </div>
 
-            <div id="big-image">
-                <img src="images/love_letter/gallery/1.jpg" alt="">
-                <img src="images/love_letter/gallery/2.jpg" alt="">
-                <img src="images/love_letter/gallery/3.jpg" alt="">
-                <img src="images/love_letter/gallery/4.jpg" alt="">
-                <img src="images/love_letter/gallery/5.jpg" alt="">
-                <img src="images/love_letter/gallery/6.jpg" alt="">
-                <img src="images/love_letter/gallery/7.jpg" alt="">
-                <img src="images/love_letter/gallery/8.jpg" alt="">
-                <img src="images/love_letter/gallery/9.jpg" alt="">
-                <img src="images/love_letter/gallery/10.jpg" alt="">
-                <img src="images/love_letter/gallery/11.jpg" alt="">
-                <img src="images/love_letter/gallery/12.jpg" alt="">
-                <img src="images/love_letter/gallery/13.jpg" alt="">
-                <img src="images/love_letter/gallery/14.jpg" alt="">
-                <img src="images/love_letter/gallery/15.jpg" alt="">
-                <img src="images/love_letter/gallery/16.jpg" alt="">
-                <img src="images/love_letter/gallery/17.jpg" alt="">
-                <img src="images/love_letter/gallery/18.jpg" alt="">
-                <img src="images/love_letter/gallery/19.jpg" alt="">
-                <img src="images/love_letter/gallery/20.jpg" alt="">
-                <img src="images/love_letter/gallery/21.jpg" alt="">
-                <img src="images/love_letter/gallery/22.jpg" alt="">
-                <img src="images/love_letter/gallery/23.jpg" alt="">
-                <img src="images/love_letter/gallery/24.jpg" alt="">
-            </div>
 
+            <div id="big_image_container">
+                <img id="big_image" onclick="this.parentElement.style.display='none'" src="images/love_letter/gallery/8.jpg"  alt="">
+            </div>
         </div>
     </div>
 
@@ -911,6 +877,15 @@
 <script src="main.js"></script>
 
 <script>
+    $('.love_letter_image, .love_letter_image_right').click(function() {
+    var imgsrc = $(this).attr('src');
+    $('#big_image').attr('src', imgsrc);
+    $('#big_image_container').show();
+    $('#big_image_container').css('display', 'flex');
+    });
+</script>
+
+<script>
 /*!
  * swiped-events.js - v1.1.4
  * Pure JavaScript swipe events
@@ -932,13 +907,17 @@
         continuousVertical: true,
         lazyLoading: true,
         dragAndMove: true,
-        normalScrollElements: '.s8'
+        normalScrollElements: '.s6, .s7, .s8, .s9'
     });</script>
 
 
 
 <script>
+    let section6 = document.getElementById('s6');
+    let section7 = document.getElementById('s7');
     let section8 = document.getElementById('s8');
+    let section9 = document.getElementById('s9');
+
 
     let moveUp = function () {
         fullpage_api.moveSectionUp();
@@ -948,31 +927,20 @@
         fullpage_api.moveSectionDown();
     };
 
+    section6.addEventListener('swiped-down', moveUp, false);
+    section6.addEventListener('swiped-up', moveDown, false);
+
+    section7.addEventListener('swiped-down', moveUp, false);
+    section7.addEventListener('swiped-up', moveDown, false);
+
     section8.addEventListener('swiped-down', moveUp, false);
     section8.addEventListener('swiped-up', moveDown, false);
+
+    section9.addEventListener('swiped-down', moveUp, false);
+    section9.addEventListener('swiped-up', moveDown, false);
 </script>
 
-<script>
-    //gallery script
-    $(function () {
-        $("#big-image img:eq(0)").nextAll().hide();
-        $(".gallery_image img").click(function (e) {
-            var index = $(this).index();
-            $("#big-image img").eq(index).show().siblings().hide();
-        });
-    });
-</script>
 
-<script>
-    //gallery script 
-    $(function () {
-        $("#big-image img:eq(0)").nextAll().hide();
-        $(".gallery_right img").click(function (e) {
-            var index = $(this).index();
-            $("#big-image img").eq(index).show().siblings().hide();
-        });
-    });
-</script>
 
 <script>
     window.addEventListener('resize', () => {
@@ -1056,6 +1024,7 @@
         document.getElementById("menu").style.transform = "translate(0)";
     }
 </script>
+
 
 </body>
 </html>

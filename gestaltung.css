@@ -234,6 +234,7 @@ a.menu_section {
   display: flex;
   border: 0px;
   height: 85vh;
+  pointer-events: none;
 }
 
 .equation_small {
@@ -476,6 +477,68 @@ img {
   background-position: 50% 50%;
 }
 
+.p10_1 {
+  background-color: white;
+}
+
+.gallery_left {
+  width: 50vw;
+  height: 100vh;
+  float: left;
+  box-sizing: border-box;
+  padding-right: 2.5vw;
+}
+
+.gallery_right {
+  width: 50vw;
+  height: 100vh;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 2.5vw;
+}
+
+.love_letter_image {
+  float: left;
+  width: auto;
+  max-width: 23vw;
+  height: auto;
+  max-height: calc(100vh / 6);
+  box-sizing: border-box;
+  padding-top: 1vw;
+  padding-left: 1vw;
+  margin: auto;
+}
+
+.love_letter_image_right {
+  float: right;
+  width: auto;
+  max-width: 23vw;
+  height: auto;
+  max-height: calc(100vh / 6);
+  box-sizing: border-box;
+  padding-top: 1vw;
+  padding-right: 1vw;
+}
+
+#big_image_container {
+  position: absolute;
+  width: 80vw;
+  height: auto;
+  border: red solid 1px;
+  justify-content: center;
+  vertical-align: middle;
+  margin: auto;
+  display: none;
+  margin-left: 10vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#big_image {
+  width: 100%;
+  height: auto;
+}
+
 .p11 {
   background-color: white;
 }
@@ -676,5 +739,6 @@ h1 {
 
   .square_one {
     height: calc(60vw / 3 * 1.4);
+    pointer-events: all;
   }
 }
