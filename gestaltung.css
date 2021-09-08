@@ -235,10 +235,12 @@ a.menu_section {
   border: 0px;
   height: 85vh;
   pointer-events: none;
+  transform: translateY(-5%);
 }
 
 .equation_small {
   font-size: 3vw;
+  text-indent: 0vw;
 }
 
 .text {
@@ -273,10 +275,14 @@ img {
 }
 
 .p3_title {
-  background: url("images/paradigm/titel_paradigm.png");
+  background: url("images/paradigm/titel_card_paradigm.jpg");
   background-size: cover;
   background-position: 50% 50%;
   opacity: 100%;
+}
+
+.p3_opener {
+  background-color: white;
 }
 
 .s3_images_100 {
@@ -331,7 +337,7 @@ img {
   background: url("images/paradigm/adapt.png");
   background-size: cover;
   background-position: 50% 50%;
-  background-color: red;
+  background-color: white;
 }
 
 .p3_hot {
@@ -740,5 +746,6 @@ h1 {
   .square_one {
     height: calc(60vw / 3 * 1.4);
     pointer-events: all;
+    transform: translateY(0%);
   }
 }
