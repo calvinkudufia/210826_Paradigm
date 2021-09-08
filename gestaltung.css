@@ -235,7 +235,6 @@ a.menu_section {
   border: 0px;
   height: 85vh;
   pointer-events: none;
-  transform: translateY(-5%);
 }
 
 .equation_small {
