@@ -421,6 +421,24 @@ img {
   background-position: 50% 50%;
 }
 
+.p3_model_one {
+  background: url("images/paradigm/graph_two.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p3_model_two {
+  background: url("images/paradigm/graph_two2.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p3_model_three {
+  background: url("images/paradigm/graph_two3.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 .p4 {
   background: url("images/open_source/open.gif");
   background-size: cover;
