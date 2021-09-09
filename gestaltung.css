@@ -276,8 +276,9 @@ img {
 
 .s2 {
   background: url("images/Stalin/stalin.gif");
-  background-size: cover;
+  background-size: contain;
   background-position: 50% 50%;
+  background-color: white;
 }
 
 .p3_title {
@@ -463,8 +464,9 @@ img {
 
 .p4 {
   background: url("images/open_source/open.gif");
-  background-size: cover;
+  background-size: contain;
   background-position: 50% 50%;
+  background-color: white;
 }
 
 .p5_title {
