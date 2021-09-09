@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body id="bodyID">
 
 <div class="header_container">
     <div id="paradigm" onclick="function_open()" class="header nav_text">PARADIGM</div>
@@ -617,6 +617,9 @@
     </div>
 
     <div class="section s6">
+        <div class="container container_skip">
+            <div class="skip">SKIP</div>
+        </div>
         <div id="s6" class="scrolling-wrapper">
 
             <!--START HIGH AND LOW-->
@@ -628,7 +631,9 @@
     <div id="s7" class="section s7">
         <div class="scrolling-wrapper">
             <div id="s7_title_card" class="card">
-                <div class="empty"></div>
+                <div class="empty">
+                    <div class="skip">SKIP</div>
+                </div>
             </div>
 
             <!-- START SERIES-->
@@ -673,14 +678,18 @@
     <div class="section s8">
         <div id="s8" class="scrolling-wrapper">
             <div id="s8_title_card" class="card">
+                <div class="container_skip">
+                    <div class=skip>SKIP</div>
+                    <div class="continue">CONTINUE</div>
+                </div>
                 <div class="empty"></div>
             </div>
 
             <!--START EDITORIAL-->
 
-            <div><img class="card" src="images/avantgarde/avantgarde2.jpg" alt="Avantgarde"></div>
-            <div><img class="card" src="images/avantgarde/avantgarde3.jpg" alt="Avantgarde"></div>
-            <div><img class="card" src="images/avantgarde/avantgarde4.jpg" alt="Avantgarde"></div>
+            <div><img class="card" src="images/avantgarde/credits/avantgarde2.jpg" alt="Avantgarde"></div>
+            <div><img class="card" src="images/avantgarde//credits/avantgarde3.jpg" alt="Avantgarde"></div>
+            <div><img class="card" src="images/avantgarde//credits/avantgarde4.jpg" alt="Avantgarde"></div>
             <div class="text_wrapper">  
                 <div class="text s8_text">
                     <br><br><br>
@@ -690,20 +699,25 @@
                    <a href="" style="text-decoration: none;"> Read the full text here. </a>
                 </div>
             </div>  
-            <div><img class="card" src="images/avantgarde/avantgarde5.jpg" alt="Avantgarde"></div>
-            <div><img class="card" src="images/avantgarde/avantgarde6.jpg" alt="Avantgarde"></div>
-            <div><img class="card" src="images/avantgarde/avantgarde7.jpg" alt="Avantgarde"></div>
-            <div><img class="card" src="images/avantgarde/avantgarde8.jpg" alt="Avantgarde"></div>
-            <div><img class="card" src="images/avantgarde/avantgarde9.jpg" alt="Avantgarde"></div>
-            <div><img class="card" src="images/avantgarde/avantgarde10.jpg" alt="Avantgarde"></div>
-            <div><img class="card" src="images/avantgarde/avantgarde11.jpg" alt="Avantgarde"></div>
+            <div><img class="card" src="images/avantgarde//credits/avantgarde5.jpg" alt="Avantgarde"></div>
+            <div><img class="card" src="images/avantgarde//credits/avantgarde6.jpg" alt="Avantgarde"></div>
+            <div><img class="card" src="images/avantgarde//credits/avantgarde7.jpg" alt="Avantgarde"></div>
+            <div><img class="card" src="images/avantgarde//credits/avantgarde8.jpg" alt="Avantgarde"></div>
+            <div><img class="card" src="images/avantgarde//credits/avantgarde9.jpg" alt="Avantgarde"></div>
+            <div><img class="card" src="images/avantgarde//credits/avantgarde10.jpg" alt="Avantgarde"></div>
+            <div><img class="card" src="images/avantgarde//credits/avantgarde11.jpg" alt="Avantgarde"></div>
         </div>
     </div>
 
     <div class="section s9">
             <div id="s9" class="scrolling-wrapper">
                 <div id="s9_title_card" class="card">
-                    <div class="empty"></div>
+                    <div class="empty">
+                        <div class="skipwrapper">
+                            <div class=skip_relative>SKIP</div>
+                        </div>
+                            <div class="continue">CONTINUE</div>
+                    </div>
                 </div>
     
                 <!-- START SERIES-->
@@ -772,6 +786,9 @@
     <div class="section s11">
         <div id="s11" class="slide p11">
             <div class="container">
+                <div class="container">
+                    <div class=skip>SKIP</div>
+                </div>
                 <div class="chapter_title">FURTHER READINGS</div>
                 <div class=further_reading>
                     <p class="equation_small">Peter Buerger,<br></p>
@@ -1060,26 +1077,50 @@
 </script>
 
 <script>
-    const header = document.querySelector(".header");
-    const reading = document.querySelector("s11");
-
-const readingOptions = {
-  rootMargin: "-200px 0px 0px 0px"
-};
-
-const readingObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-        document.getElementsByClassName(".header").style.color = "black";
-    } else {
-        document.getElementsByClassName(".header").style.color = "white";
-    }
-  });
-},
-readingOptions);
-
-readingObserver.observe(reading);
-
+    var elemToObserve = document.getElementById('bodyID');
+    var observer = new MutationObserver(function (mutations) {
+        mutations.forEach(function (mutation) {
+            if (mutation.attributeName == "class") {
+                if (mutation.target.classList.contains('fp-viewing-0') ||
+                    mutation.target.classList.contains('fp-viewing-1') ||
+                    mutation.target.classList.contains('fp-viewing-12') ||
+                    mutation.target.classList.contains('fp-viewing-2-3') ||
+                    mutation.target.classList.contains('fp-viewing-2-4') ||
+                    mutation.target.classList.contains('fp-viewing-2-5') ||
+                    mutation.target.classList.contains('fp-viewing-2-6') ||
+                    mutation.target.classList.contains('fp-viewing-2-7') ||
+                    mutation.target.classList.contains('fp-viewing-2-8') ||
+                    mutation.target.classList.contains('fp-viewing-2-9') ||
+                    mutation.target.classList.contains('fp-viewing-11')) {
+                    document.getElementById('paradigm').style.color = "white";
+                } else if (
+                    mutation.target.classList.contains('fp-viewing-2-11') ||
+                    mutation.target.classList.contains('fp-viewing-2-12') ||
+                    mutation.target.classList.contains('fp-viewing-2-13') ||
+                    mutation.target.classList.contains('fp-viewing-2-14') ||
+                    mutation.target.classList.contains('fp-viewing-2-15') ||
+                    mutation.target.classList.contains('fp-viewing-2-16') ||
+                    mutation.target.classList.contains('fp-viewing-2-17') ||
+                    mutation.target.classList.contains('fp-viewing-2-18') ||
+                    mutation.target.classList.contains('fp-viewing-2-19') ||
+                    mutation.target.classList.contains('fp-viewing-2-20') ||
+                    mutation.target.classList.contains('fp-viewing-2-21') ||
+                    mutation.target.classList.contains('fp-viewing-2-22') ||
+                    mutation.target.classList.contains('fp-viewing-2-23') ||
+                    mutation.target.classList.contains('fp-viewing-2-24') ||
+                    mutation.target.classList.contains('fp-viewing-2-25') ||
+                    mutation.target.classList.contains('fp-viewing-2-26')) {
+                    document.getElementById('bodyID').style.background = "url(\"images/paradigm/light.jpg\")"
+                    document.getElementById('bodyID').style.backgroundSize = "cover";
+                } else {
+                    document.getElementById('paradigm').style.color = "black";
+                    document.getElementById('bodyID').style.background = "url(\"images/paradigm/dark.jpg\")";
+                    document.getElementById('bodyID').style.backgroundSize = "cover";
+                }
+            }
+        });
+    });
+    observer.observe(elemToObserve, {attributes: true});
 </script>
 
 </body>
