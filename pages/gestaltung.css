@@ -54,6 +54,7 @@ body {
 
 a.header_desktop {
   text-decoration: none;
+  font-family: "everett";
 }
 
 a.header_desktop:hover {
