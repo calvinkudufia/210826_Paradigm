@@ -542,7 +542,10 @@ img {
   background-position: 50% 50%;
 }
 
-.p9_dance {
+#s9_title_card {
+  width: 100vw;
+  height: 100vh;
+  padding-left: 0;
   background: url("images/kitsch/Kitsch.gif");
   background-size: cover;
   background-position: 50% 50%;

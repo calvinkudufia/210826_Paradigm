@@ -657,8 +657,6 @@
                       alt="Reference Dump"></div>
             <div><img class="card" style="padding-left: 20px; padding-right:20px;" src="images/Referenz/dump16.jpg"
                       alt="Reference Dump"></div>
-            <div><img class="card" style="padding-left: 20px; padding-right:20px;" src="images/Referenz/dump17.jpg"
-                      alt="Reference Dump"></div>
             <div><img class="card" style="padding-left: 20px;" src="images/Referenz/dump_18.png" alt="Reference Dump">
             </div>
 
@@ -696,18 +694,23 @@
     </div>
 
     <div class="section s9">
-        <div id="s9" class="slide p9_dance">
-            <div class="container">
-                <div class=skip>SKIP</div>
-                <div class="continue">CONTINUE</div>
-            </div>
-        </div>
-        <div class="slide p9">
-            <div class="scrolling-wrapper">
+            <div id="s9" class="scrolling-wrapper">
+                <div id="s9_title_card" class="card">
+                    <div class="empty"></div>
+                </div>
+    
                 <!-- START SERIES-->
-                <div><img class="card" src="images/kitsch/kitsch_scroll.jpg" alt="Avantgarde"></div>
+                <div><img class="card" src="images/kitsch/editorial/kitsch.jpg" alt="Kitsch"></div>
+                <div><img class="card" src="images/kitsch/editorial/kitsch2.jpg" alt="Kitsch"></div>
+                <div><img class="card" src="images/kitsch/editorial/kitsch3.jpg" alt="Kitsch"></div>
+                <div><img class="card" src="images/kitsch/editorial/kitsch4.jpg" alt="Kitsch"></div>
+                <div><img class="card" src="images/kitsch/editorial/kitsch5.jpg" alt="Kitsch"></div>
+                <div><img class="card" src="images/kitsch/editorial/kitsch6.jpg" alt="Kitsch"></div>
+                <div><img class="card" src="images/kitsch/editorial/kitsch7.jpg" alt="Kitsch"></div>
+                <div><img class="card" src="images/kitsch/editorial/kitsch8.jpg" alt="Kitsch"></div>
+                <div><img class="card" src="images/kitsch/editorial/kitsch9.jpg" alt="Kitsch"></div>
+                <div><img class="card" src="images/kitsch/editorial/kitsch11.jpg" alt="Kitsch"></div>
             </div>
-        </div>
     </div>
 
     <div class="section s10">
@@ -928,7 +931,7 @@
         scrollHorizontally: true,
         controlArrows: false,
         verticalCentered: false,
-        continuousVertical: false,
+        continuousVertical: true,
         resetSliders: false,
         lazyLoading: true,
         dragAndMove: true,
@@ -1049,6 +1052,28 @@
     }
 </script>
 
+<script>
+    const header = document.querySelector(".header");
+    const reading = document.querySelector("s11");
+
+const readingOptions = {
+  rootMargin: "-200px 0px 0px 0px"
+};
+
+const readingObserver = new IntersectionObserver(function(entries, sectionOneObserver) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+        document.getElementsByClassName(".header").style.color = "black";
+    } else {
+        document.getElementsByClassName(".header").style.color = "white";
+    }
+  });
+},
+readingOptions);
+
+readingObserver.observe(reading);
+
+</script>
 
 </body>
 </html>
