@@ -306,6 +306,17 @@ img {
   box-sizing: border-box;
 }
 
+.images_50_wrapper_small {
+  width: 35vw;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5vw;
+  padding-right: 2.5vw;
+  padding-top: 4.5vw;
+  box-sizing: border-box;
+  margin-right: 15vw;
+}
+
 .images_50_wrapper_right {
   width: 50vw;
   box-sizing: border-box;
@@ -337,10 +348,25 @@ img {
   float: left;
 }
 
+.s3_footnotes_50_small {
+  width: 150%;
+  font-size: 3vw;
+  text-align: left;
+  float: left;
+}
+
 .images_turned_wrapper {
   width: 35vw;
   float: left;
   transform: rotate(10deg);
+  padding-top: 7vw;
+  padding-left: 10vw;
+}
+
+.images_turned_wrapper {
+  width: 35vw;
+  float: left;
+  transform: rotate(-10deg);
   padding-top: 7vw;
   padding-left: 10vw;
 }
@@ -448,6 +474,48 @@ img {
 
 .p5_title {
   background: url("images/meme/meme_title_card.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p5_1 {
+  background: url("images/meme/row/meme.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p5_2 {
+  background: url("images/meme/row/meme2.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p5_3 {
+  background: url("images/meme/row/meme3.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p5_4 {
+  background: url("images/meme/row/meme4.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p5_5 {
+  background: url("images/meme/row/meme5.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p5_6 {
+  background: url("images/meme/row/meme6.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.p5_7 {
+  background: url("images/meme/row/meme7.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
