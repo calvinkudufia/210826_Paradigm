@@ -363,7 +363,7 @@ img {
   padding-left: 10vw;
 }
 
-.images_turned_wrapper {
+.images_turned_wrapper_left {
   width: 35vw;
   float: left;
   transform: rotate(-10deg);
