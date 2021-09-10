@@ -697,13 +697,13 @@ img {
 
 .s9_backstage_image {
   width: auto;
-  height: 30%;
+  height: 25%;
   top: 0;
   left: 0;
 }
 
 .backstage_image_one {
-  transform: translate(0vw, 20vh);
+  transform: translate(20vw, 30vh);
 }
 
 .backstage_image_two {
