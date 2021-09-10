@@ -676,7 +676,8 @@ img {
 
 #s9_title_card {
   width: 100vw;
-  height: 100vh;
+  max-height: 100vh;
+  height: -webkit-fill-available;
   padding-left: 0;
   background: url("images/kitsch/Kitsch.gif");
   background-size: cover;
