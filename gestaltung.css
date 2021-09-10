@@ -634,7 +634,7 @@ img {
   background-position: 50% 50%;
 }
 
-.backstage_images {
+.backstage_images_avantgarde {
   background: url("images/avantgarde/backstage/Backstage_images.png");
   background-size: cover;
   background-position: 50% 50%;
@@ -703,12 +703,18 @@ img {
 }
 
 .backstage_image_one {
-  transform: translate(0vw, 10vh);
+  transform: translate(10vw, 25vh);
 }
 
 .backstage_image_two {
   height: 20%;
-  transform: translate(0vw, 45vh);
+  transform: translate(0vw, 55vh);
+}
+
+.backstage_images_kitsch {
+  background: url("images/kitsch/backstage/backstage_kitsch_images.png");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .p10 {
