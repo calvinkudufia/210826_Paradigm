@@ -25,6 +25,16 @@
   }
 }
 
+@keyframes vanish {
+  90% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -42,6 +52,17 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.loading_animation_wrapper {
+  width: 100vw;
+  position: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  z-index: 200;
+  animation: vanish 2s forwards;
 }
 
 .header_container {
@@ -607,6 +628,31 @@ img {
   background-position: 50% 50%;
 }
 
+.s8_backstage {
+  background: url("images/avantgarde/backstage/avantgarde_backstage.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.s8_video {
+  width: auto;
+  height: 20%;
+  top: 0;
+  left: 0;
+}
+
+.video_one {
+  transform: translate(-10vw, 20vh);
+}
+
+.s8_video_horizontal {
+  width: auto;
+  height: 40%;
+  top: 0;
+  left: 0;
+  transform: translate(20vw, 30vh);
+}
+
 #s9_title_card {
   width: 100vw;
   height: 100vh;
@@ -792,6 +838,12 @@ a.newsletter_text:hover {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.kitsch_text {
+  background: url("images/kitsch/kitsch_titel.png");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .continue {
