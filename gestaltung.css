@@ -634,6 +634,27 @@ img {
   background-position: 50% 50%;
 }
 
+.backstage_images {
+  background: url("images/avantgarde/backstage/Backstage_images.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.backstage_title {
+  position: relative;
+  color: rgb(200, 200, 200);
+  width: 100vw;
+  font-family: "everett";
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 3.5vw;
+  text-align: right;
+  padding-top: 4.5vw;
+  padding-right: 5vw;
+  box-sizing: border-box;
+}
+
 .s8_video {
   width: auto;
   height: 20%;
@@ -650,7 +671,7 @@ img {
   height: 40%;
   top: 0;
   left: 0;
-  transform: translate(20vw, 30vh);
+  transform: translate(20vw, 25vh);
 }
 
 #s9_title_card {
@@ -666,6 +687,28 @@ img {
   background: url("images/kitsch/kitsch.jpg");
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.s9_backstage {
+  background: url("images/kitsch/backstage/backstage.gif");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.s9_backstage_image {
+  width: auto;
+  height: 30%;
+  top: 0;
+  left: 0;
+}
+
+.backstage_image_one {
+  transform: translate(0vw, 10vh);
+}
+
+.backstage_image_two {
+  height: 20%;
+  transform: translate(0vw, 45vh);
 }
 
 .p10 {
