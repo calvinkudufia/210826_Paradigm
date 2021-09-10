@@ -875,7 +875,6 @@ a.newsletter_text:hover {
   position: relative;
   width: 100vw;
   height: 100%;
-  height: -webkit-fill-available;
   overflow: hidden;
   -webkit-perspective: 1200px;
   perspective: 1200px;
