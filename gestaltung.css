@@ -293,10 +293,13 @@ img {
 }
 
 .s2 {
-  background: url("images/Stalin/stalin.gif");
-  background-size: contain;
-  background-position: 50% 50%;
   background-color: white;
+}
+
+.s2_video {
+  width: 100%;
+  border: 0px;
+  height: auto;
 }
 
 .p3_title {
