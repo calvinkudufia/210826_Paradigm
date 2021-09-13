@@ -199,10 +199,7 @@ a.menu_section {
 .magazine_container {
   position: relative;
   text-align: center;
-  height: auto;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  height: 70vh;
 }
 
 #matches_cover {
@@ -255,7 +252,7 @@ a.menu_section {
 .square_one {
   display: flex;
   border: 0px;
-  height: 85vh;
+  height: 80vh;
   pointer-events: none;
 }
 
@@ -998,6 +995,15 @@ h1 {
 
   .menu {
     display: none;
+  }
+
+  .magazine_container {
+    position: relative;
+    text-align: center;
+    height: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
   }
 }
 
