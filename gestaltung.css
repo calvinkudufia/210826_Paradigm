@@ -1005,6 +1005,16 @@ h1 {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
+  .square_one {
+    height: calc(60vw / 3 * 1.4);
+    pointer-events: all;
+    transform: translateY(0%);
+  }
+
+  #timer_one {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 900px) {
@@ -1026,15 +1036,5 @@ h1 {
     padding-bottom: 40px;
     padding-left: 45px;
     color: rgb(100, 100, 100);
-  }
-
-  #timer_one {
-    display: block;
-  }
-
-  .square_one {
-    height: calc(60vw / 3 * 1.4);
-    pointer-events: all;
-    transform: translateY(0%);
   }
 }
