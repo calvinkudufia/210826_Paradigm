@@ -921,6 +921,11 @@ a.newsletter_text:hover {
   box-sizing: border-box;
 }
 
+.p3_last_title {
+  text-align: left;
+  padding-left: 5vw;
+}
+
 h1 {
   text-align: left;
   font-size: 12vw;
