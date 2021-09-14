@@ -117,7 +117,7 @@
         <div id="s3" class="slide p3_title">
             <div class="container">
                 <div class=skip>SKIP</div>
-                <div class="continue">CONTINUE</div>
+                <div class="chapter_title text_paradigm continue_animation">CONTINUE →</div>
             </div>
         </div>
         <div class="slide p3_opener">
@@ -624,7 +624,7 @@
         <div id="s5" class="slide p5_title">
             <div class="container">
                 <div class=skip>SKIP</div>
-                <div class="continue">CONTINUE</div>
+                <div class="chapter_title continue_animation">CONTINUE →</div>
             </div>
         </div>
         <div class="slide p5_1"></div>
@@ -638,13 +638,14 @@
 
     <div class="section s6">
         <div id="s6" class="scrolling-wrapper">
-            <div class="container_skip">
+            <div class="container" style="pointer-events: none;">
                 <div class=skip>SKIP</div>
-                <div class="continue">CONTINUE</div>
+                <div class="chapter_title continue_animation">CONTINUE →</div>
             </div>
             <!--START HIGH AND LOW-->
 
             <div><img class="card" src="images/high_and_low/high_low_scroll.jpg" alt="High ‘N Low"></div>
+  
         </div>
     </div>
 
@@ -653,7 +654,7 @@
             <div id="s7_title_card" class="card">
                 <div class="container_skip">
                     <div class=skip>SKIP</div>
-                    <div class="continue">CONTINUE</div>
+                    <div class="chapter_title continue_animation">CONTINUE →</div>
                 </div>
                 <div class="empty">
                 </div>
@@ -703,7 +704,7 @@
             <div id="s8_title_card" class="card">
                 <div class="container_skip">
                     <div class=skip>SKIP</div>
-                    <div class="continue">CONTINUE</div>
+                    <div class="chapter_title continue_animation">CONTINUE →</div>
                 </div>
                 <div class="empty"></div>
             </div>
@@ -752,7 +753,7 @@
                 <div id="s9_title_card" class="card">
                     <div class="container_skip kitsch_text">
                         <div class=skip>SKIP</div>
-                        <div class="continue">CONTINUE</div>
+                        <div class="chapter_title continue_animation">CONTINUE →</div>
                     </div>
                     <div class="empty"></div>
                 </div>
@@ -782,9 +783,9 @@
 
     <div class="section s10">
         <div id="s10" class="slide p10">
-            <div class="container">
+            <div class="container" style="pointer-events: none;">
                 <div class=skip>SKIP</div>
-                <div class="continue">CONTINUE</div>
+                <div class="chapter_title continue_animation">CONTINUE →</div>
             </div>
         </div>
         <div class="slide p10_1">
@@ -824,7 +825,7 @@
 
 
             <div id="big_image_container">
-                <img id="big_image" onclick="this.parentElement.style.display='none'" src="images/love_letter/gallery/8.jpg"  alt="">
+                <img id="big_image" onclick="this.parentElement.style.display='none'" src="images/love_letter/gallery/1.jpg"  alt="">
             </div>
         </div>
     </div>
@@ -1137,7 +1138,8 @@
                     mutation.target.classList.contains('fp-viewing-3rdPage-7') ||
                     mutation.target.classList.contains('fp-viewing-3rdPage-8') ||
                     mutation.target.classList.contains('fp-viewing-3rdPage-9') ||
-                    mutation.target.classList.contains('fp-viewing-11')) {
+                    mutation.target.classList.contains('fp-viewing-11')|| 
+                    mutation.target.classList.contains('fp-viewing-12thpage')) {
                     document.getElementById('paradigm').style.color = "rgb(200, 200, 200)";
                 } else if (
                     mutation.target.classList.contains('fp-viewing-3rdPage-11') ||
