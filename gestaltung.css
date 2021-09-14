@@ -1042,4 +1042,13 @@ h1 {
     padding-left: 45px;
     color: rgb(100, 100, 100);
   }
+
+  .square_one:hover ~ .location_one {
+    color: white;
+    transition-duration: 1s;
+  }
+  .magazine_container_one:hover ~ #timer_one {
+    color: white;
+    transition-duration: 1s;
+  }
 }
