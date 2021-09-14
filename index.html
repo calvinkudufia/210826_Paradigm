@@ -39,23 +39,23 @@
 <div id="menu" class="menu">
     <div id="menu_big" class="menu_section">MENU</div>
 
-    <a href="#s2" class="menu_section">How Stalin Predicted TikTok</a>
-    <a href="#s3" class="menu_section">The New Creative Paradigm</a>
-    <a href="#s4" class="menu_section">Open Source Is God</a>
-    <a href="#s5" class="menu_section">On Memes</a>
-    <a href="#s6" class="menu_section">High N’ Low Trend Forecast</a>
-    <a href="#s7" class="menu_section">Reference Dump</a>
-    <a href="#s8" class="menu_section">Avantgarde</a>
-    <a href="#s9" class="menu_section"> Kitsch</a>
-    <a href="#s10" class="menu_section"> Love Letter</a>
-    <a href="#s11" class="menu_section"> Further Reading</a>
-    <a href="#s12" class="menu_section"> Credits</a>
+    <a data-menuanchor="secondPage" href="#secondPage" class="menu_section">How Stalin Predicted TikTok</a>
+    <a data-menuanchor="3rdPage" href="#3rdPage" class="menu_section">The New Creative Paradigm</a>
+    <a data-menuanchor="4thpage"  href="#4thpage" class="menu_section">Open Source Is God</a>
+    <a data-menuanchor="5thpage" href="#5thpage" class="menu_section">On Memes</a>
+    <a data-menuanchor="6thPage" href="#6thpage" class="menu_section">High N’ Low Trend Forecast</a>
+    <a data-menuanchor="7thPage" href="#7thpage" class="menu_section">Reference Dump</a>
+    <a data-menuanchor="8thPage" href="#8thpage" class="menu_section">Avantgarde</a>
+    <a data-menuanchor="9thPage" href="#9thpage" class="menu_section"> Kitsch</a>
+    <a data-menuanchor="10thPage" href="#10thpage" class="menu_section"> Love Letter</a>
+    <a data-menuanchor="11thPage" href="#11thpage" class="menu_section"> Further Reading</a>
+    <a data-menuanchor="12thPage" href="#12thpage" class="menu_section"> Credits</a>
     <a id="menu_close" onclick="function_close()" class="menu_section close"> Close</a>
 
 </div>
 
 <div id="fullpage">
-    <div class="section s1">
+    <div class="section s1 active">
         <div class="container loading_one">
             <div class="loading_text">GUIDE TO A<br>NEW CREATIVE<br>PARADIGM</div>
             <a class="newsletter_text nav_text" href="http://eepurl.com/hGhtGH" target="blank">Subscribe to
@@ -1002,7 +1002,9 @@
         resetSliders: false,
         lazyLoading: true,
         dragAndMove: true,
-        normalScrollElements: '.s6, .s7, .s8, .s9'
+        normalScrollElements: '.s6, .s7, .s8, .s9',
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', '5thpage', '6thpage', '7thpage', '8thpage', '9thpage', '10thpage', '11thpage', '12thpage','lastPage'],
+	    menu: '#menu',
     });</script>
 
 
@@ -1127,34 +1129,34 @@
                 if (mutation.target.classList.contains('fp-viewing-0') ||
                     mutation.target.classList.contains('fp-viewing-1') ||
                     mutation.target.classList.contains('fp-viewing-12') ||
-                    mutation.target.classList.contains('fp-viewing-2-0') ||
-                    mutation.target.classList.contains('fp-viewing-2-3') ||
-                    mutation.target.classList.contains('fp-viewing-2-4') ||
-                    mutation.target.classList.contains('fp-viewing-2-5') ||
-                    mutation.target.classList.contains('fp-viewing-2-6') ||
-                    mutation.target.classList.contains('fp-viewing-2-7') ||
-                    mutation.target.classList.contains('fp-viewing-2-8') ||
-                    mutation.target.classList.contains('fp-viewing-2-9') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-0') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-3') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-4') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-5') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-6') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-7') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-8') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-9') ||
                     mutation.target.classList.contains('fp-viewing-11')) {
                     document.getElementById('paradigm').style.color = "rgb(200, 200, 200)";
                 } else if (
-                    mutation.target.classList.contains('fp-viewing-2-11') ||
-                    mutation.target.classList.contains('fp-viewing-2-12') ||
-                    mutation.target.classList.contains('fp-viewing-2-13') ||
-                    mutation.target.classList.contains('fp-viewing-2-14') ||
-                    mutation.target.classList.contains('fp-viewing-2-15') ||
-                    mutation.target.classList.contains('fp-viewing-2-16') ||
-                    mutation.target.classList.contains('fp-viewing-2-17') ||
-                    mutation.target.classList.contains('fp-viewing-2-18') ||
-                    mutation.target.classList.contains('fp-viewing-2-19') ||
-                    mutation.target.classList.contains('fp-viewing-2-20') ||
-                    mutation.target.classList.contains('fp-viewing-2-21') ||
-                    mutation.target.classList.contains('fp-viewing-2-22') ||
-                    mutation.target.classList.contains('fp-viewing-2-23') ||
-                    mutation.target.classList.contains('fp-viewing-2-24') ||
-                    mutation.target.classList.contains('fp-viewing-2-25') ||
-                    mutation.target.classList.contains('fp-viewing-2-26') ||
-                    mutation.target.classList.contains('fp-viewing-2-27')) {
+                    mutation.target.classList.contains('fp-viewing-3rdPage-11') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-12') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-13') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-14') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-15') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-16') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-17') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-18') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-19') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-20') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-21') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-22') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-23') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-24') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-25') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-26') ||
+                    mutation.target.classList.contains('fp-viewing-3rdPage-27')) {
                     document.getElementById('bodyID').style.background = "url(\"images/paradigm/light.jpg\")"
                     document.getElementById('bodyID').style.backgroundSize = "cover";
                 } else {
