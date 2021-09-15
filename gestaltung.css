@@ -167,7 +167,7 @@ body {
   border-left: solid white 1px;
   transform: translateX(0);
   animation-name: menu_transition;
-  animation-duration: 10s;
+  animation-duration: 13s;
   transition: 2s;
   -webkit-transition: 2s;
 }
