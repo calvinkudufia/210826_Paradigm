@@ -35,6 +35,23 @@
   }
 }
 
+@keyframes loading {
+  0% {
+    transform: translateX(-80vw);
+  }
+
+  20% {
+    transform: translateX(-60vw);
+  }
+
+  90% {
+    transform: translateX(-5vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+
 @keyframes continue {
   40% {
     transform: translateX(-10vw);
@@ -72,9 +89,42 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
+  display: flex;
   background-color: black;
   z-index: 200;
   animation: vanish 2s forwards;
+}
+
+.loading_bar_wrapper {
+  width: 80vw;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.loading_bar_box {
+  width: 80vw;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.loading_bar {
+  height: 0.5vh;
+  border-radius: 2px;
+  width: 100%;
+  background-color: rgb(160, 160, 160);
+  animation: loading 8s forwards;
+  text-align: center;
+}
+
+.animation_text {
+  color: rgb(200, 200, 200);
+  font-family: "everett";
+  font-size: 3vw;
+  text-align: center;
 }
 
 .header_container {
@@ -1070,5 +1120,8 @@ h1 {
   .magazine_container_one:hover ~ #timer_one {
     color: white;
     transition-duration: 1s;
+  }
+  .animation_text {
+    font-size: 20px;
   }
 }
