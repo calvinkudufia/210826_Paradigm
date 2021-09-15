@@ -110,6 +110,7 @@ body {
   background-color: black;
   width: 80vw;
   height: -webkit-fill-available;
+  max-height: 100vh;
   z-index: 99;
   box-sizing: border-box;
   border-right: solid white 1px;
@@ -691,15 +692,10 @@ img {
 
 #s9_title_card {
   width: 100vw;
-  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
   padding-left: 0;
   background: url("images/kitsch/Kitsch.gif");
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-.p9_1 {
-  background: url("images/kitsch/kitsch.jpg");
   background-size: cover;
   background-position: 50% 50%;
 }
