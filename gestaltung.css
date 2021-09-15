@@ -692,8 +692,7 @@ img {
 
 #s9_title_card {
   width: 100vw;
-  height: -webkit-fill-available;
-  max-height: 100vh;
+  height: 100%;
   padding-left: 0;
   background: url("images/kitsch/Kitsch.gif");
   background-size: cover;
@@ -904,6 +903,7 @@ a.newsletter_text:hover {
   background: url("images/kitsch/kitsch_titel.png");
   background-size: cover;
   background-position: 50% 50%;
+  height: -webkit-fill-available;
 }
 
 .continue {
