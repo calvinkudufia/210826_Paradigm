@@ -86,7 +86,8 @@ body {
 .loading_animation_wrapper {
   width: 100vw;
   position: fixed;
-  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
   margin: 0;
   padding: 0;
   display: flex;
