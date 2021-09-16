@@ -101,6 +101,7 @@ body {
   position: relative;
   margin: auto;
   overflow: hidden;
+  border-radius: 2px;
 }
 
 .loading_bar_box {
