@@ -385,6 +385,7 @@ img {
 .continue_animation {
   animation: continue 2s forwards;
   animation-duration: 2s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
