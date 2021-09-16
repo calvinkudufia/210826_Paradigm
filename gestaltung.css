@@ -388,6 +388,7 @@ img {
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  will-change: transform;
 }
 
 .images_50_wrapper {
